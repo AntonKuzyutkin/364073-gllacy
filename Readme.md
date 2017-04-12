@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Антон Кузюткин](https://up.htmlacademy.ru/htmlcss/17/user/364073).
-* Наставник: [Максим Клевцов].
+* Наставник: [Максим Клевцов] (https://htmlacademy.ru/profile/maxklevtsov)
 
 ---
 
