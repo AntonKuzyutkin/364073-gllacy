@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Glacy - магазин мороженого</title>
+	</head>
+	<body>
+	<!--Начало Хедера-->
+		<header class="mainHeader centeringUnit">
+			<!--Логотип начало-->
+			<div class="logo">
+				<img src="img/glacy.png" alt="glacy ice-cream">
+			</div>
+			<!--Логотип конец-->
+			<!--Навигация начало-->
+			<nav class="mainNavigation">
+				<ul>
+					<li>
+						<a href="#">Каталог</a>
+						<ul>
+							<li><a>Новинки</a></li>
+							<li><a>Сливочное</a></li>
+							<li><a>Щербеты</a></li>
+							<li><a>Фруктовый лед</a></li>
+							<li><a>Мелорин</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+			</nav>
+			<!--Навигация конец-->
+			<!--Клиентский блок начало-->
+			<div class="clientArea">
+				<div class="btn">
+					Лупа
+				</div>
+				<form action="#" method="get">
+					<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
+				</form>
+				<button class="btn">Вход</button>
+				<form action="#" method="post">
+					<input class="formField" type="email" name="login" placeholder="Электронная почта">
+					<input class="formField" type="password" name="password" placeholder="Пароль">
+					<input class="btn btnSpecialColor" type="submit" name="enterPrivate" value="Войти">
+					<div class="formLinks">
+						<a href="#">Забыли пароль?</a>
+						<a href="#">Новая регистрация</a>
+					</div>
+				</form>
+				<a class="btn" href="#">Корзина</a>
+			</div>
+			<!--Клиентский блок конец-->
+			<!--Рабочие часы+телефон начало-->
+			<div class="workingHours">
+				<p>
+					С 10 до 20, ежедневно <br>
+					<span class="tel">8 812 450-25-25</span>
+				<p>
+			</div>
+			<!--Рабочие часы+телефон конец-->
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li>Сливочное</li>
+			</ul>
+		</header>
+		<!--Конец Хедера-->
+		<!--Начало Основного контента-->
+		<main class="centeringUnit">
+			<h1>Сливочное мороженое</h1>
+			<!--Начало формы-->
+			<form action="#" method="get">
+				<!--Начало сетки для формы-->
+				<!--Начало "таблицы" СОРТИРОВКА-ЦЕНА-ЖИРНОСТЬ-->
+				<div class="tb">
+					<div class="tbRow">
+						<label class="tbCell" for="howSort">Сортировка:</label>
+						<label class="tbCell" for="priceRange">Цена: 100 руб.-500 руб.</label>
+						<label class="tbCell" for="fatRange">Жирность:</label>
+					</div>
+					<div class="tbRow">
+						<select class="formArea tbCell" name="howSort" id="howSort">
+							<option value="1">По популярности</option>
+							<option value="2">Сначала недорогие</option>
+							<option value="3">Сначала дорогие</option>
+							<option value="4">По жирности</option>
+						</select>
+						<input class="formArea tbCell" type="range" id="priceRange" name="priceRange" min="100" max="500">
+						<fieldset id="fatRange tbCell">
+							<input type="radio" name="fat" value="0" id="zeroFat">
+							<label for="zeroFat">0%</label>
+							<input type="radio" name="fat" value="1" id="lessTenFat">
+							<label for="lessTenFat">До 10%</label>
+							<input type="radio" name="fat" value="2" id="lessThirtyFat">
+							<label for="lessThirtyFat">До 30%</label>
+							<input type="radio" name="fat" value="3" id="moreThirtyFat">
+							<label for="moreThirtyFat">Выше 30%</label>
+						</fieldset>
+					</div>
+				</div>
+				<!--Конец "таблицы" СОРТИРОВКА-ЦЕНА-ЖИРНОСТЬ-->
+				<!--Начало "таблицы" НАПОЛНЕНИЕ-ПРИМЕНИТЬ-->
+				<div class="tb">
+					<div class="tbRow">
+						<label class="tbCell" for="fillingOption">Наполнители:</label>
+					</div>
+					<div class="tbRow">
+						<fieldset id="fillingOption tbCell">
+							<input type="checkbox" name="chocolate" value="0" id="chocolate">
+							<label for="chocolate">шоколадные</label>
+							<input type="checkbox" name="sugar" value="1" id="sugar">
+							<label for="sugar">сахарные присыпки</label>
+							<input type="checkbox" name="fruit" value="2" id="fruit">
+							<label for="fruit">фрукты</label>
+							<input type="checkbox" name="syrop" value="3" id="syrop">
+							<label for="syrop">сиропы</label>
+							<input type="checkbox" name="jam" value="4" id="jam">
+							<label for="jam">джемы</label>
+						</fieldset>
+						<input class="btn" type="submit" value="Применить">
+					</div>
+				</div>
+				<!--Конец "таблицы" НАПОЛНЕНИЕ-ПРИМЕНИТЬ-->
+				<!--Конец сетки для формы-->
+			</form>
+			<!--Конец формы-->
+			<!--Начало каталога-->
+			<div class="catalogueList">
+				<!--Начало Ряд 1-->
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					</figure>
+					<span class="price">310 Р/кг</span>
+					<h2><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочно-кофейное с кусочками шоколада">
+					</figure>
+					<span class="price">380 Р/кг</span>
+					<h2><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					</figure>
+					<span class="price">355 Р/кг</span>
+					<h2><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочное крем-брюле с карамельной подливкой">
+					</figure>
+					<span class="price">415 Р/кг</span>
+					<h2><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<!--Конец Ряд 1-->
+				<!--Начало Ряд 2-->
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочное с брусничным джемом">
+					</figure>
+					<span class="price">325 Р/кг</span>
+					<h2><a href="#">Сливочное с брусничным джемом</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочно-черничное с цельными ягодами черники">
+					</figure>
+					<span class="price">410 Р/кг</span>
+					<h2><a href="#">Сливочно-черничное с цельными ягодами черники</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочно-лимонное с карамельной присыпкой">
+					</figure>
+					<span class="price">375 Р/кг</span>
+					<h2><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочное с шоколадной стружкой">
+					</figure>
+					<span class="price">320 Р/кг</span>
+					<h2><a href="#">Сливочное с шоколадной стружкой</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<!--Конец Ряд 2-->
+				<!--Начало Ряд 3-->
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочно-ванильное с кусочками шоколада">
+					</figure>
+					<span class="price">440 Р/кг</span>
+					<h2><a href="#">Сливочно-ванильное с кусочками шоколада</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>	
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочноe с ментоловым сиропом">
+					</figure>
+					<span class="price">435 Р/кг</span>
+					<h2><a href="#">Сливочноe с ментоловым сиропом</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>				
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочное с кусочками черного шоколада">
+					</figure>
+					<span class="price">355 Р/кг</span>
+					<h2><a href="#">Сливочное с кусочками черного шоколада</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<article class="item">
+					<figure>
+						<img src="img/pic.jpeg" alt="Сливочное с мятным сиропом">
+					</figure>
+					<span class="price">420 Р/кг</span>
+					<h2><a href="#">Сливочное с мятным сиропом</a></h2>
+					<button class="btn btnSpecialColor" type="button">Быстрый просмотр</button>
+				</article>
+				<!--Конец Ряд 3-->				
+			</div>
+			<!--Конец каталога-->
+			<!--Начало Навигация по страницам-->
+			<ul class="pageNavigation">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+			<!--Конец Навигация по страницам-->
+		</main>
+		<!--Конец основного контента-->
+		<footer class="mainFooter centeringUnit">
+			<div class="social">
+				<a class="socialBtn twitter" href="#">Твиттер</a>
+				<a class="socialBtn instagram" href="#">Инстаграм</a>
+				<a class="socialBtn facebook" href="#">Фейсбук</a>
+				<a class="socialBtn vk" href="#">ВК</a>
+			</div>
+			<nav class="bottomNavigation">
+				<ul class="bottomNavLeft">
+					<li><a href="#">Для Поставщиков</a></li>
+					<li><a href="#">О производстве</a></li>
+				</ul>
+				<ul class="bottomNavRight">
+					<li><a href="#">Наши документы</a></li>
+					<li><a href="#">Экологические стандарты</a></li>
+				</ul>
+			</nav>
+			<div class="maker">
+				<div class="makerLogo">
+					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTML Academy"></a>
+				</div>
+				<p>Сделано в HTML Academy © 2017</p>
+			</div>
+		</footer>
+	</body>
+</html>
