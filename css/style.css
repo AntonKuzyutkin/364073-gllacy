@@ -1,0 +1,179 @@
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/roboto.woff") format("woff");
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/robotobold.woff") format("woff");
+	font-weight: bold;
+}
+
+body {
+	font-family: Roboto, Arial, "Helvetica CY", sans-serif;
+	background-color: #849d8f;
+	color: #ffffff;
+	font-size: 16px;
+}
+.mainNavigation .menuNovelties,
+.findUs .tel,
+.mainHeader .workingHours,
+.mainContent .promoEvents,
+.mainContent .blog a,
+.findUs .locality,
+.btnSpecialFont,
+.mainFooter .forSuppliers,
+.mainNavigation>ul>li>a,
+.hits .price,
+.mainCatalogue .price,
+.slider .slTitle,
+.mainCatalogue .mainCatalogueTitle {
+	font-weight: bold;
+}
+
+.maker p	{
+	font-size: 12px;
+}
+.mainFooter .bottomNavigation,
+.loginForm .formLinks {
+	font-size: 13px;
+}
+.mainNavigation .menuNovelties,
+.mainHeader .workingHours,
+.clientArea>.btn,
+.mainNavigation>ul ul>li,
+.address h2,
+.findUs .orderByTel,
+.mainHeader .formField,
+.breadcrumbs li,
+.sortingConditions label,
+.breadcrumbs li
+ {
+	font-size: 14px;
+}
+.mainNavigation>ul>li,
+.mainContent .blog p,
+.hits .item .itemTitle,
+.mainContent .pros p,
+.mainContent .subscribe p,
+.mainContent .subscribe input[type="email"],
+.mainContent .modalForm .formField,
+.findUs .tel,
+.catalogueList .item .itemTitle
+ {
+	font-size: 16px;	
+}
+
+.findUs .tel,
+.mainContent .promoEvents,
+.findUs .locality,
+.mainContent .modalForm .btn,
+.subscribeForm .btn,
+.orderByTel .btn,
+.loginForm .btn,
+.promoEvents .btn
+{
+	font-size: 18px;
+}
+.workingHours .tel {
+	font-size: 22px;
+}
+.modalForm p,
+.blog a,
+.pros .prosTitle,
+.catalogueList .item .btn,
+.hits .item .btn {
+	font-size: 24px;
+}
+.item .price{
+	font-size: 45px;
+	line-height: 1;
+}
+
+.item .weight{
+	font-size: 30px;	
+}
+.slider .btn {
+	font-size: 32px;
+}
+.promoEvents .promoEventsTitle,
+.mainCatalogue h1{
+	font-size: 35px;
+	line-height: 1.171;
+}
+.slider .slTitle {
+	font-size: 60px;
+	line-height: 1;
+}
+.workingHours .tel{
+	line-height: 1.091;
+}
+.mainNavigation>ul>li {
+	line-height: 1.125;
+}
+.mainNavigation .menuNovelties,
+.clientArea>.btn,
+.mainNavigation>ul ul>li,
+.sortingConditions label,
+.breadcrumbs li
+ {
+	line-height: 1.143;
+}
+.modalForm p{
+	line-height: 1.167;
+}
+.findUs .tel,
+.promoEvents p
+ {
+	line-height: 1.222;
+}
+.mainContent .blog a,
+.pros .prosTitle {
+	line-height: 1.250;
+}
+.findUs .locality,
+.catalogueList .item .btn,
+.hits .item .btn  {
+	line-height: 1.333;
+}
+.mainContent .blog p,
+.hits .item .itemTitle,
+.mainContent .pros p,
+.mainContent .subscribe p {
+	line-height: 1.375;
+}
+.mainFooter .bottomNavigation{
+	line-height: 1.385;
+}
+.findUs .address .addressTitle,
+.findUs .orderByTel {
+	line-height: 1.429;
+}
+.item .weight {
+	line-height: 1.5; 
+}
+.loginForm .formLinks {
+	line-height: 1.846;
+}
+.mainNavigation .menuNovelties,
+.mainNavigation>ul ul>li,
+.modalForm p,
+.findUs .tel,
+.pros,
+.mainContent .blog,
+.findUs,
+.loginForm .formLinks a
+{
+	color: #323232;
+}
+.subscribe p {
+	color: #5a5a5a;
+}
+.btn,
+.mainFooter .bottomNavigation a,
+.mainNavigation>ul>li>a,
+.breadcrumbs a,
+.catalogueList .item .itemTitle a,
+.hits .item .itemTitle a  {
+	color: #ffffff;
+}
