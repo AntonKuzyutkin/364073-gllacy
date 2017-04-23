@@ -15,6 +15,369 @@ body {
 	color: #ffffff;
 	font-size: 16px;
 }
+
+/*стили сеток*/
+.mainWrapper {
+	outline: 1px solid yellow;
+	width: 1200px;
+	margin: 0 auto;
+}
+/*.mainHeader*/ .centeringUnit{
+	width: 1146px;
+	margin: 0 auto;
+}
+.mainNavigation .upperMenu li{
+	display: inline-block;
+}
+.mainNavigation {
+	float: left;
+	width: 850px;
+}
+.mainNavigation .logo {
+	float: left;
+}
+.mainNavigation .upperMenu{
+	width: 696px;
+	font-size: 0;
+}
+.mainNavigation .upperMenu li{
+	padding-right: 27px;
+	line-height: 68px;
+}
+.mainNavigation .upperMenu li:first-child {
+	padding-left: 24px;
+}
+.mainNavigation .upperMenu li:last-child {
+	padding-right: 24px;
+}
+
+header {
+	outline: 1px solid green;
+}
+.mainNavigation, .clientArea {
+	outline: 1px solid blue;
+}
+.magnify {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: white;
+}
+.clientArea .btnInline{
+	display: inline-block;
+}
+.clientArea .btnInline{
+	vertical-align: middle;
+}
+.workingHours{
+	float: right;
+}
+.clientArea{
+	width: 265px;
+	float: right;
+	font-size: 0;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.slider figure{
+	outline: 1px solid yellow;
+	width: 650px;
+	margin: 0 auto;
+}
+.promoEvents {
+	outline: 1px solid white;
+}
+.promoEvents .promoCol {
+	width: 519px;
+	padding-left: 20px;
+	padding-right: 21px;
+	outline: 1px solid green;
+}
+.promoEvents .leftCol{
+	float: left;
+}
+.promoEvents .rightCol{
+	float: right;
+}
+.promoEvents .promoEventsTitle{
+outline: 1px solid green;
+margin-top: 15px;
+margin-bottom: 7px;	
+}
+.promoEvents p {
+	margin-bottom: 45px;
+}
+.promoEvents a{
+	float: right;
+	line-height:46px;
+	text-align: center;
+	background-color: red;
+	width: 165px;
+	height: 46px;
+	margin-bottom: 23px;
+	border-radius: 20px;
+}
+
+.hits{
+	outline: 1px solid black;
+	font-size: 0;	
+}
+.hits .item {
+	outline: 1px solid yellow;
+	display: inline-block;
+	width: 267px;
+	margin-right: 26px;
+	margin-bottom: 41px;
+
+}
+.hits .item:last-child {
+	margin-right: 0;
+}
+.hits .itemTitle {
+	text-align: center;
+}
+.pros{
+	outline: 1px solid white;
+	padding-top: 1px;
+	font-size: 0;
+	margin-bottom: 42px;
+}
+.pros .prosTitle {
+	margin-top: 27px;
+}
+.pros .prosItem {
+	outline: 1px solid blue;
+	width: 484px;
+	padding-left: 76px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 27px;
+}
+.pros .prosItem:nth-of-type(2n+1) {
+	margin-right: 26px;
+}
+.infoPart,
+.infoPart .blog, 
+.infoPart .subscribe{
+	outline: 1px solid white;
+}
+.infoPart {
+	margin-bottom: 41px;
+}
+.infoPart .blog {
+	width: 540px;
+	padding-left: 20px;
+	padding-top: 26px;
+	float: left;
+	height: 194px;
+}
+.infoPart .subscribe {
+	width: 505px;
+	float: right;
+	height: 183px;
+	padding-top: 37px;
+	padding-left: 28px;
+	padding-right: 27px;
+}
+
+.blog p{
+	margin-bottom: 9px;
+	width: 286px;
+}
+
+/*типа нормалайз начало*/
+.findUs h2,
+.findUs p{
+	margin: 0;
+	padding: 0;
+}
+figure,
+.pros h1{
+	padding: 0;
+	margin: 0;
+}
+.item h2{
+	margin-bottom: 0;
+	
+}
+.bottomNavigation ul {
+	list-style: none;
+	padding: 0;
+}
+fieldset{
+	padding: 0;
+}
+/*типа номалайз конец*/
+
+.findUs .address {
+	outline: 1px solid green;
+	height: 245px;
+	width: 250px;
+	padding-top: 30px;
+	padding-left: 26px;
+	padding-right: 26px;
+	padding-bottom: 30px;
+	
+}
+.findUs .addressTitle {
+	margin-bottom: 6px;
+}
+.findUs .findUsAddress {
+	margin-bottom: 20px;
+}
+.findUs .orderByTel {
+	margin-bottom: 25px;
+}
+.findUs .btn {
+	background-color: red;
+	display: block;
+	width: 252px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.findUs .addressTitle{
+	width: 155px;
+}
+
+
+.mainFooter {
+	outline: 1px solid white;
+	font-size: 0;
+}
+.mainFooter .social {
+	outline: 1px solid blue;
+	width: 267px;
+}
+.mainFooter .bottomNavigation {
+	outline: 1px solid blue;
+	width: 400px;
+}
+.mainFooter .maker {
+	outline: 1px solid blue;
+	width: 267px;
+}
+.mainFooterSection {
+	display: inline-block;
+	margin-right: 106px;
+	vertical-align: middle;
+}
+.mainFooterSection:last-child {
+	margin-right: 0;
+}
+.bottomNavMain {
+	font-size: 0;
+}
+.bottomNavMain li{
+	outline: 1px solid white;
+	display: inline-block;
+}
+.bottomNavMain li:nth-of-type(2n+1){
+	width: 120px;
+	padding-left: 45px;
+	margin-right: 25px;
+	
+}
+.bottomNavMain li:nth-of-type(2n){
+	width: 165px;
+	padding-right: 45px;
+}
+.breadcrumbs li{
+	display: inline-block;
+}
+.breadcrumbs {
+	float: left;
+	outline: 1px solid white;
+}
+[class^="tbCell"] {
+	outline: 1px solid white;
+	display: inline-block;
+}
+.sortingConditions {
+	font-size: 0;
+}
+
+
+.sortForm .tbCell1{
+	width: 193px;
+	margin-right: 16px;
+	border-width: 0;
+}
+.sortForm .tbCell2{
+	width: 220px;
+	margin-right: 16px;
+	margin-left: 0;
+}
+.sortForm .tbCell3{
+	width: 415px;
+	border-width: 0;
+	margin:0;
+}
+.sortForm .tbCell4 {
+	width: 700px;
+	margin-right: 14px;
+}
+.sortForm .tbCell5 {
+	width: 146px;	
+}
+.sortForm {
+	width: 860px;
+	outline: 1px solid white;
+}
+
+.catalogueList {
+	font-size: 0;
+	outline: 1px solid black;
+}
+
+.catalogueList .item {
+	outline: 1px solid yellow;
+	display: inline-block;
+	width: 267px;
+	margin-right: 26px;
+	margin-bottom: 41px;
+	vertical-align: top;
+	height: 373px;
+
+}
+.catalogueList .item:nth-of-type(4n) {
+	margin-right: 0;
+}
+.pageNavigation {
+	float: right;
+	outline: 1px solid white;
+	font-size: 0;
+}
+.pageNavigation li{
+	display: inline-block;
+	padding-left: 9px;
+	width: 28px;
+	height: 28px;
+}
+.pageNavigation li a {
+	line-height: 28px;
+}
+.item img {
+	border-radius: 50%;
+}
+/*спрятать ховеры*/
+ul ul,
+.clientArea .loginForm,
+.clientArea .searchForm,
+.item .btn,
+.modalForm{
+	display: none;	
+}
+
+
+
+
+
+/*стили текста*/
 .mainNavigation .menuNovelties,
 .findUs .tel,
 .mainHeader .workingHours,
@@ -34,7 +397,8 @@ body {
 .maker p	{
 	font-size: 12px;
 }
-.mainFooter .bottomNavigation,
+.social,
+.mainFooter .bottomNavMain li,
 .loginForm .formLinks {
 	font-size: 13px;
 }
@@ -59,7 +423,8 @@ body {
 .mainContent .subscribe input[type="email"],
 .mainContent .modalForm .formField,
 .findUs .tel,
-.catalogueList .item .itemTitle
+.catalogueList .item .itemTitle,
+.pageNavigation li
  {
 	font-size: 16px;	
 }
@@ -71,8 +436,7 @@ body {
 .subscribeForm .btn,
 .orderByTel .btn,
 .loginForm .btn,
-.promoEvents .btn
-{
+.promoEvents .btn {
 	font-size: 18px;
 }
 .workingHours .tel {
@@ -108,7 +472,8 @@ body {
 .workingHours .tel{
 	line-height: 1.091;
 }
-.mainNavigation>ul>li {
+.mainNavigation>ul>li,
+.pageNavigation li {
 	line-height: 1.125;
 }
 .mainNavigation .menuNovelties,

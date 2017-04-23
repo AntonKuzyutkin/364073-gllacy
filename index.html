@@ -7,112 +7,111 @@
 	</head>
 	<body>
 	<!--Начало Хедера-->
-		<header class="mainHeader centeringUnit">
-			<!--Логотип начало-->
-			<div class="logo">
-				<img  src="img/logo-154_64.png" width="154" height="64" alt="glacy ice-cream">
-			</div>
-			<!--Логотип конец-->
-			<!--Навигация начало-->
-			<nav class="mainNavigation">
-				<ul>
-					<li>
-						<a href="#">Каталог</a>
-						<ul>
-							<li class="menuNovelties"><a>Новинки</a></li>
-							<li><a>Сливочное</a></li>
-							<li><a>Щербеты</a></li>
-							<li><a>Фруктовый лед</a></li>
-							<li><a>Мелорин</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">О компании</a></li>
-				</ul>
-			</nav>
-			<!--Навигация конец-->
-			<!--Клиентский блок начало-->
-			<div class="clientArea">
-				<div class="btn">
-					Лупа
-				</div>
-				<form action="#" method="get">
-					<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
-				</form>
-				<button class="btn">Вход</button>
-				<form class="loginForm" action="#" method="post">
-					<input class="formField" type="email" name="login" placeholder="Электронная почта">
-					<input class="formField" type="password" name="password" placeholder="Пароль">
-					<input class="btn btnSpecialColor btnSpecialFont" type="submit" name="enterPrivate" value="Войти">
-					<div class="formLinks">
-						<a href="#">Забыли пароль?</a>
-						<a href="#">Новая регистрация</a>
+		<div class="mainWrapper">
+			<header class="mainHeader centeringUnit clearfix">
+				<!--Навигация начало-->
+				<nav class="mainNavigation">				
+					<!--Логотип начало-->
+					<div class="logo">
+						<img  src="img/logo-154_64.png" width="154" height="64" alt="glacy ice-cream">
 					</div>
-				</form>
-				<a class="btn" href="#">Корзина</a>
-			</div>
-			<!--Клиентский блок конец-->
-			<!--Рабочие часы+телефон начало-->
-			<div class="workingHours">
-				<p>
-					С 10 до 20, ежедневно <br>
-					<span class="tel">8 812 450-25-25</span>
-				<p>
-			</div>
-			<!--Рабочие часы+телефон конец-->
-			<!--Слайдер начало-->
-			<div class="slider">
-				<div class="slide1">
-					<figure>
-						<img src="img/slider1-647_584.png" width="647" height="584" alt="Рожки крем-брюле и пломбир с малиновым джемом"> 
-					</figure>
-					<p class="slTitle">Крем-брюле и пломбир с малиновым джемом</p>
-					<div class="sliderDots"><!--Три точки на слайдере-->
-						<div></div>
-						<div></div>
-						<div></div>
+					<!--Логотип конец-->				
+					<ul class="upperMenu">
+						<li>
+							<a href="#">Каталог</a>
+							<ul>
+								<li class="menuNovelties"><a>Новинки</a></li>
+								<li><a>Сливочное</a></li>
+								<li><a>Щербеты</a></li>
+								<li><a>Фруктовый лед</a></li>
+								<li><a>Мелорин</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+				</nav>
+				<!--Навигация конец-->
+				<!--Клиентский блок начало-->
+				<div class="clientArea">
+					<div class="btn magnify btnInline">
 					</div>
-					<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
+					<form class="searchForm" action="#" method="get">
+						<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
+					</form>
+					<button class="btn btnInline">Вход</button>
+					<form class="loginForm" action="#" method="post">
+						<input class="formField" type="email" name="login" placeholder="Электронная почта">
+						<input class="formField" type="password" name="password" placeholder="Пароль">
+						<input class="btn btnSpecialColor btnSpecialFont" type="submit" name="enterPrivate" value="Войти">
+						<div class="formLinks">
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</div>
+					</form>
+					<a class="btn btnInline" href="#">Корзина</a>
 				</div>
-				<div class="slide2">
-					<figure>
-						<img src="img/slider2-644_582.png" width="644" height="582" alt="Рожки шоколадный пломбир и лимонный сорбет"> 
-					</figure>
-					<p class="slTitle">Шоколадный пломбир и лимонный сорбет</p>
-					<div class="sliderDots"><!--Три точки на слайдере-->
-						<div></div>
-						<div></div>
-						<div></div>
+				<!--Клиентский блок конец-->
+				<!--Рабочие часы+телефон начало-->
+				<div class="workingHours">
+					<p>
+						С 10 до 20, ежедневно <br>
+						<span class="tel">8 812 450-25-25</span>
+					<p>
+				</div>
+				<!--Рабочие часы+телефон конец-->
+			</header>
+			<!--Конец Хедера-->
+			<!--Начало основного контента-->
+			<main class="mainContent">			
+				<!--Слайдер начало-->
+				<div class="slider centeringUnit">
+					<div class="slide1">
+						<figure>
+							<img src="img/slider1-647_584.png" width="647" height="584" alt="Рожки крем-брюле и пломбир с малиновым джемом"> 
+						</figure>
+						<p class="slTitle">Крем-брюле и пломбир с малиновым джемом</p>
+						<div class="sliderDots"><!--Три точки на слайдере-->
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
 					</div>
-					<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
-				</div>
-				<div class="slide3">
-					<figure>
-						<img src="img/slider3-639_582.png" width="639" height="582" alt="Рожки пломбир с помадкой и клубничны щербет"> 
-					</figure>
-					<p class="slTitle">Пломбир с помадкой и клубничны щербет</p>
-					<div class="sliderDots"><!--Три точки на слайдере-->
-						<div></div>
-						<div></div>
-						<div></div>
+					<div class="slide2">
+						<figure>
+							<img src="img/slider2-644_582.png" width="644" height="582" alt="Рожки шоколадный пломбир и лимонный сорбет"> 
+						</figure>
+						<p class="slTitle">Шоколадный пломбир и лимонный сорбет</p>
+						<div class="sliderDots"><!--Три точки на слайдере-->
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
 					</div>
-					<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
+					<div class="slide3">
+						<figure>
+							<img src="img/slider3-639_582.png" width="639" height="582" alt="Рожки пломбир с помадкой и клубничны щербет"> 
+						</figure>
+						<p class="slTitle">Пломбир с помадкой и клубничны щербет</p>
+						<div class="sliderDots"><!--Три точки на слайдере-->
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
+					</div>
 				</div>
-			</div>
-			<!--Слайдер конец-->
-		</header>
-		<!--Конец Хедера-->
-		<!--Начало основного контента-->
-		<main class="mainContent">
-			<div class="centeringUnit">
+				<!--Слайдер конец-->			
 				<!--Начало промоБанеры-->
-				<div class="promoEvents">
-					<div class="leftCol">
+				<div class="promoEvents centeringUnit clearfix">
+					<div class="leftCol promoCol">
 						<h2 class="promoEventsTitle">Малинка даром!</h2>
 						<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 						<a class="btn btnSpecialColor" href="#">Хочу варенье!</a>
 					</div>
-					<div class="rightCol">
+					<div class="rightCol promoCol">
 						<h2 class="promoEventsTitle">Шоколадки даром!</h2>
 						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
 						<a class="btn btnSpecialColor" href="#">Хочу шоколадки!</a>				
@@ -120,7 +119,7 @@
 				</div>
 				<!--Конец промоБанеры-->
 				<!--Начало ХитыПродаж-->
-				<div class="hits">
+				<div class="hits centeringUnit">
 					<article class="item">
 						<figure>
 							<img src="img/hit1-267_267.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
@@ -156,101 +155,102 @@
 				</div>
 				<!--Конец ХитыПродаж-->
 				<!--Начало Плюсы Магазина-->
-				<div class="pros">
+				<div class="pros centeringUnit">
 					<h1 class="prosTitle">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-					<div class="leftCol">
-						<p>
+					<!--<div class="leftCol">-->
+						<p class="prosItem">
 							Все наше мороженое изготавливается на собственном производстве, с использованием современного 
 							оборудования и проверенных временем технологий. 
-						</p>
-						<p>
-							Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
-							Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.						
-						</p>	
-					</div>
-					<div class="rightCol">
-						<p>
+						</p>						
+						<p class="prosItem">
 							Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает 
 							долговременное сотрудничество.  
+						</p>						
+	
+					<!--</div>-->
+					<!--<div class="rightCol">-->
+						<p class="prosItem">
+							Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
+							Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.						
 						</p>
-						<p>
+						<p class="prosItem">
 							Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
 							который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 						</p>
-					</div>
+					<!--</div>-->
 				</div>
 				<!--Конец Плюсы Магазина-->
 				<!--Начало Блог-->
-				<div class="blog leftCol">
-					<p>Новое в нашем блоге<p>
-					<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+				<div class="infoPart centeringUnit clearfix">
+					<div class="blog leftCol">
+						<p>Новое в нашем блоге<p>
+						<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+					</div>
+					<!--Конец Блог-->
+					<!--Начало подписка-->
+					<div class="subscribe rightCol">
+						<p>
+							Подпишитесь на нашу сладкую рассылкуи будете всегда в курсе всего самого вкусного, 
+							что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+						</p>
+						<form class="subscribeForm" action="#" method="post">
+							<input type="email" name="email" placeholder="Электронная почта">
+							<input class="btn btnSpecialColor btnSpecialFont" type="submit" value="Отправить" name="okSubscription">
+						</form>
+					</div>
+					<!--конец подписка-->
 				</div>
-				<!--Конец Блог-->
-				<!--Начало подписка-->
-				<div class="subscribe rightCol">
-					<p>
-						Подпишитесь на нашу сладкую рассылкуи будете всегда в курсе всего самого вкусного, 
-						что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-					</p>
-					<form class="subscribeForm" action="#" method="post">
-						<input type="email" name="email" placeholder="Электронная почта">
-						<input class="btn btnSpecialColor btnSpecialFont" type="submit" value="Отправить" name="okSubscription">
+				<!--начало карта-контакты-->
+				<div class="findUs">
+				<img src="img/map-1200_430.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург 8 812 450-25-25 (с 10 до 20 ежедневно)">
+					<article class="address">
+						<h2 class="addressTitle">Адрес главного офиса и офлайн магазина:</h2>
+						<p class="findUsAddress">
+							<span class="locality">
+								ул. Большая Конюшенная<br>
+								19/8, Санкт-Петербург
+							</span>
+						</p>
+						<p class="orderByTel">
+							Для заказов по телефону:<br>
+							<span class="tel">8 812 450-25-25</span><br>
+							(с 10 до 20 ежедневно)							
+						</p>
+						<a class="btn btnSpecialColor" href="#">Форма обратной связи</a>
+					</article>
+					<form class="modalForm" action="#" method="post">
+						<p>Мы обязательно вам ответим</p>
+						<input class="formField" type="text" name="clientName" placeholder="Как вас зовут?">
+						<input class="formField" type="text" name="clientMail" placeholder="Ваша почта для ответа">
+						<textarea class="formField" name="clientComment" placeholder="Напишите нам что-нибудь..."></textarea>
+						<input class="btn btnSpecialColor btnSpecialFont" type="submit" value="Отправить">
 					</form>
 				</div>
-				<!--конец подписка-->
-			</div>
-			<!--начало карта-контакты-->
-			<div class="findUs">
-			<img src="img/map-1200_430.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург 8 812 450-25-25 (с 10 до 20 ежедневно)">
-				<article class="address">
-					<h2 class="addressTitle">Адрес главного офиса и офлайн магазина:</h2>
-					<p>
-						<span class="locality">
-							ул. Большая Конюшенная<br>
-							19/8, Санкт-Петербург
-						</span>
-					</p>
-					<p class="orderByTel">
-						Для заказов по телефону:<br>
-						<span class="tel">8 812 450-25-25</span><br>
-						(с 10 до 20 ежедневно)<br>
-						<a class="btn btnSpecialColor" href="#">Форма обратной связи</a>
-					</p>
-				</article>
-				<form class="modalForm" action="#" method="post">
-					<p>Мы обязательно вам ответим</p>
-					<input class="formField" type="text" name="clientName" placeholder="Как вас зовут?">
-					<input class="formField" type="text" name="clientMail" placeholder="Ваша почта для ответа">
-					<textarea class="formField" name="clientComment" placeholder="Напишите нам что-нибудь..."></textarea>
-					<input class="btn btnSpecialColor btnSpecialFont" type="submit" value="Отправить">
-				</form>
-			</div>
-			<!--конец карта-контакты-->
-		</main>
-		<!--Конец основного контента-->
-		<footer class="mainFooter centeringUnit">
-			<div class="social">
-				<a class="socialBtn twitter" href="#">Твиттер</a>
-				<a class="socialBtn instagram" href="#">Инстаграм</a>
-				<a class="socialBtn facebook" href="#">Фейсбук</a>
-				<a class="socialBtn vk" href="#">ВК</a>
-			</div>
-			<nav class="bottomNavigation">
-				<ul class="bottomNavLeft">
-					<li class="forSuppliers"><a href="#">Для Поставщиков</a></li>
-					<li><a href="#">О производстве</a></li>
-				</ul>
-				<ul class="bottomNavRight">
-					<li><a href="#">Наши документы</a></li>
-					<li><a href="#">Экологические стандарты</a></li>
-				</ul>
-			</nav>
-			<div class="maker">
-				<div class="makerLogo">
-					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academyLogo-108_38.png" width="108" height="38" alt="HTML Academy"></a>
+				<!--конец карта-контакты-->
+			</main>
+			<!--Конец основного контента-->
+			<footer class="mainFooter centeringUnit">
+				<div class="social mainFooterSection">
+					<a class="socialBtn twitter" href="#">Твиттер</a>
+					<a class="socialBtn instagram" href="#">Инстаграм</a>
+					<a class="socialBtn facebook" href="#">Фейсбук</a>
+					<a class="socialBtn vk" href="#">ВК</a>
 				</div>
-				<p>Сделано в HTML Academy © 2017</p>
-			</div>
-		</footer>
+				<nav class="bottomNavigation mainFooterSection">
+					<ul class="bottomNavMain">
+						<li class="forSuppliers"><a href="#">Для Поставщиков</a></li>
+						<li><a href="#">Наши документы</a></li>						
+						<li><a href="#">О производстве</a></li>
+						<li><a href="#">Экологические стандарты</a></li>
+					</ul>
+				</nav>
+				<div class="maker mainFooterSection">
+					<div class="makerLogo">
+						<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academyLogo-108_38.png" width="108" height="38" alt="HTML Academy"></a>
+					</div>
+					<p>Сделано в HTML Academy © 2017</p>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>
