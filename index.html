@@ -3,10 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Glacy - магазин мороженого</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+	<input type="radio" id="btn-1" name="change" checked>
+	<input type="radio" id="btn-2" name="change">
+	<input type="radio" id="btn-3" name="change">
 	<!--Начало Хедера-->
+	<div class="bodyWrapper">
 		<div class="mainWrapper">
 			<header class="mainHeader centeringUnit clearfix">
 				<!--Навигация начало-->
@@ -19,43 +24,49 @@
 					<ul class="upperMenu">
 						<li>
 							<a href="#">Каталог</a>
-							<ul>
-								<li class="menuNovelties"><a>Новинки</a></li>
-								<li><a>Сливочное</a></li>
-								<li><a>Щербеты</a></li>
-								<li><a>Фруктовый лед</a></li>
-								<li><a>Мелорин</a></li>
+							<ul class="subMenu">
+								<li class="menuNovelties"><a href="#">Новинки</a></li>
+								<li><a href="#">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#" class="activePage">Мелорин</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">О компании</a></li>
+						<li><a href="#" class="activePage">Доставка и оплата</a></li>
+						<li><a href="#">О Компании</a></li>
 					</ul>
 				</nav>
 				<!--Навигация конец-->
 				<!--Клиентский блок начало-->
-				<div class="clientArea">
+				<div class="clientArea">					
 					<div class="btn magnify btnInline">
+						<form class="searchForm" action="#" method="get">
+							<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
+						</form>				
 					</div>
-					<form class="searchForm" action="#" method="get">
-						<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
-					</form>
-					<button class="btn btnInline">Вход</button>
+					<button class="btn btnInline callLogin">Вход</button>
 					<form class="loginForm" action="#" method="post">
-						<input class="formField" type="email" name="login" placeholder="Электронная почта">
-						<input class="formField" type="password" name="password" placeholder="Пароль">
+						<div class="formLine">
+							<input class="formField" type="email" name="login" id="loginEmail" placeholder="Электронная почта">
+							<label for="loginEmail">Электронная почта</label>
+						</div>
+						<div class="formLine">
+							<input class="formField" type="password" name="password" id="loginPassword" placeholder="Пароль">
+							<label for="loginPassword">Пароль</label>
+						</div>
 						<input class="btn btnSpecialColor btnSpecialFont" type="submit" name="enterPrivate" value="Войти">
 						<div class="formLinks">
-							<a href="#">Забыли пароль?</a>
-							<a href="#">Новая регистрация</a>
+							<a href="#" class="formLink">Забыли пароль?</a>
+							<a href="#" class="formLink">Новая регистрация</a>
 						</div>
 					</form>
-					<a class="btn btnInline" href="#">Корзина</a>
+					<a class="btn btnInline tray" href="#">Пусто</a>
 				</div>
 				<!--Клиентский блок конец-->
 				<!--Рабочие часы+телефон начало-->
 				<div class="workingHours">
 					<p>
-						С 10 до 20, ежедневно <br>
+						С 10 до 20, ежедневно<br>
 						<span class="tel">8 812 450-25-25</span>
 					<p>
 				</div>
@@ -66,41 +77,29 @@
 			<main class="mainContent">			
 				<!--Слайдер начало-->
 				<div class="slider centeringUnit">
-					<div class="slide1">
+					<div class="slide1 slide">
 						<figure>
-							<img src="img/slider1-647_584.png" width="647" height="584" alt="Рожки крем-брюле и пломбир с малиновым джемом"> 
+							<img src="img/slider1-647_584.png" width="647" height="582" alt="Рожки крем-брюле и пломбир с малиновым джемом"> 
 						</figure>
 						<p class="slTitle">Крем-брюле и пломбир с малиновым джемом</p>
-						<div class="sliderDots"><!--Три точки на слайдере-->
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
 					</div>
-					<div class="slide2">
+					<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба!</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
+					<div class="slide2 slide">
 						<figure>
 							<img src="img/slider2-644_582.png" width="644" height="582" alt="Рожки шоколадный пломбир и лимонный сорбет"> 
 						</figure>
 						<p class="slTitle">Шоколадный пломбир и лимонный сорбет</p>
-						<div class="sliderDots"><!--Три точки на слайдере-->
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
 					</div>
-					<div class="slide3">
+					<div class="slide3 slide">
 						<figure>
 							<img src="img/slider3-639_582.png" width="639" height="582" alt="Рожки пломбир с помадкой и клубничны щербет"> 
 						</figure>
-						<p class="slTitle">Пломбир с помадкой и клубничны щербет</p>
-						<div class="sliderDots"><!--Три точки на слайдере-->
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<a class="btn btnSpecialColor btnSpecialFont" href="#">Давайте оба</a><!--Класс btnSpecialColor описывает все красные кнопки// btnSpecialFont-крупный шрифт у кнопок -->
+						<p class="slTitle">Пломбир с помадкой и&nbsp;клубничны щербет</p>
+					</div>
+					<div class="slideChanger">
+						<label class="label" for="btn-1"></label>
+						<label class="label" for="btn-2"></label>
+						<label class="label" for="btn-3"></label>
 					</div>
 				</div>
 				<!--Слайдер конец-->			
@@ -124,33 +123,41 @@
 						<figure>
 							<img src="img/hit1-267_267.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
 						</figure>
-						<span class="price">310 Р/<span class="weight">кг</span></span>
+						<span class="price">310 &#8381;<span class="weight">/кг</span></span>
 						<h2 class="itemTitle"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой </a></h2>
-						<button class="btn btnSpecialColor btnSpecialFont" type="button">Быстрый просмотр</button>
+						<div class="hideBt">
+							<a class="btn btnSpecialColor btnSpecialFont" href="https://htmlacademy.ru/">Быстрый просмотр</a>
+						</div>
 					</article>
 					<article class="item">
 						<figure>
 							<img src="img/hit2-267_267.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
 						</figure>
-						<span class="price">380 Р/<span class="weight">кг</span></span>
+						<span class="price">380 &#8381;<span class="weight">/кг</span></span>
 						<h2 class="itemTitle"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
-						<button class="btn btnSpecialColor btnSpecialFont" type="button">Быстрый просмотр</button>
+						<div class="hideBt">
+							<a class="btn btnSpecialColor btnSpecialFont" href="https://htmlacademy.ru/">Быстрый просмотр</a>
+						</div>
 					</article>
 					<article class="item">
 						<figure>
 							<img src="img/hit3-267_267.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
 						</figure>
-						<span class="price">355 Р/<span class="weight">кг</span></span>
+						<span class="price">355&#8381;<span class="weight">/кг</span></span>
 						<h2 class="itemTitle"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
-						<button class="btn btnSpecialColor btnSpecialFont" type="button">Быстрый просмотр</button>
+						<div class="hideBt">
+							<a class="btn btnSpecialColor btnSpecialFont" href="https://htmlacademy.ru/">Быстрый просмотр</a>
+						</div>
 					</article>
 					<article class="item">
 						<figure>
 							<img src="img/hit4-267_267.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 						</figure>
-						<span class="price">415 Р/<span class="weight">кг</span></span>
+						<span class="price">415 &#8381;<span class="weight">/кг</span></span>
 						<h2 class="itemTitle"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
-						<button class="btn btnSpecialColor btnSpecialFont" type="button">Быстрый просмотр</button>
+						<div class="hideBt">
+							<a class="btn btnSpecialColor btnSpecialFont" href="https://htmlacademy.ru/">Быстрый просмотр</a>
+						</div>
 					</article>
 				</div>
 				<!--Конец ХитыПродаж-->
@@ -158,22 +165,22 @@
 				<div class="pros centeringUnit">
 					<h1 class="prosTitle">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
 					<!--<div class="leftCol">-->
-						<p class="prosItem">
+						<p class="prosItem picIce">
 							Все наше мороженое изготавливается на собственном производстве, с использованием современного 
 							оборудования и проверенных временем технологий. 
 						</p>						
-						<p class="prosItem">
+						<p class="prosItem picCow">
 							Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает 
 							долговременное сотрудничество.  
 						</p>						
-	
+
 					<!--</div>-->
 					<!--<div class="rightCol">-->
-						<p class="prosItem">
+						<p class="prosItem picLeaf">
 							Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
 							Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.						
 						</p>
-						<p class="prosItem">
+						<p class="prosItem picTemp">
 							Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
 							который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 						</p>
@@ -183,14 +190,14 @@
 				<!--Начало Блог-->
 				<div class="infoPart centeringUnit clearfix">
 					<div class="blog leftCol">
-						<p>Новое в нашем блоге<p>
-						<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+						<p class="blogTitle">Новое в нашем блоге</p>
+						<p class="blogSpec"><a href="#">10  способов сервировки фруктовых щербетов к столу</a></p>
 					</div>
 					<!--Конец Блог-->
 					<!--Начало подписка-->
 					<div class="subscribe rightCol">
-						<p>
-							Подпишитесь на нашу сладкую рассылкуи будете всегда в курсе всего самого вкусного, 
+						<p class="subsText">
+							Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
 							что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 						</p>
 						<form class="subscribeForm" action="#" method="post">
@@ -218,13 +225,24 @@
 						</p>
 						<a class="btn btnSpecialColor" href="#">Форма обратной связи</a>
 					</article>
-					<form class="modalForm" action="#" method="post">
-						<p>Мы обязательно вам ответим</p>
-						<input class="formField" type="text" name="clientName" placeholder="Как вас зовут?">
-						<input class="formField" type="text" name="clientMail" placeholder="Ваша почта для ответа">
-						<textarea class="formField" name="clientComment" placeholder="Напишите нам что-нибудь..."></textarea>
+					<form class="modalForm clearfix" action="#" method="post">
+						<p class="modalFormTitle">Мы обязательно вам ответим!</p>
+						<button class="close" type="button"></button>
+						<div class="formLine">
+							<input class="formField" type="text" name="clientName" id="clientName" placeholder="Как вас зовут?">
+							<label for="clientName">Как вас зовут?</label>
+						</div>
+						<div class="formLine">
+							<input class="formField" type="text" name="clientMail" id="clientMail" placeholder="Ваша почта для ответа">
+							<label for="clientMail">Ваша почта для ответа</label>
+						</div>						
+						<div class="formLine">
+							<textarea class="formField clientComment" name="clientComment" id="clientComment" placeholder="Напишите нам что-нибудь..."></textarea>
+							<label for="clientComment">Напишите отзыв</label>
+						</div>							
 						<input class="btn btnSpecialColor btnSpecialFont" type="submit" value="Отправить">
 					</form>
+					<div class="underLayer"></div>
 				</div>
 				<!--конец карта-контакты-->
 			</main>
@@ -252,5 +270,6 @@
 				</div>
 			</footer>
 		</div>
+	</div>
 	</body>
 </html>
