@@ -64,13 +64,13 @@
 										<button class="cancel" type="button"></button>
 									</td>
 									<td class="pictureIce">
-										<img src="img/picIceYellow.png" width="33" height="33">	
+										<img src="img/picIceYellow.png" width="33" height="33" alt="Ваш заказ">	
 									</td>
 									<td class="description">
 										<p>Пломбир с апельсиновым джемом</p>
 									</td>
 									<td class="quantity">
-										<p>1,50 кг x <span class="price">200&nbsp;руб.<span></p>
+										<p>1,50 кг x <span class="price">200&nbsp;руб.</span></p>
 									</td>
 									<td class="total">
 										<p>300 руб.</p>
@@ -81,13 +81,13 @@
 										<button class="cancel" type="button"></button>
 									</td>
 									<td class="pictureIce">
-										<img src="img/picIcePink.png" width="33" height="33">	
+										<img src="img/picIcePink.png" width="33" height="33" alt="Ваш заказ">	
 									</td>
 									<td class="description">
 										<p>Клубничный пломбир с присыпкой из белого шоколада</p>
 									</td>
 									<td class="quantity">
-										<p>1,50 кг x <span class="price">20000000000&nbsp;руб.<span></p>
+										<p>1,50 кг x <span class="price">20000000000&nbsp;руб.</span></p>
 									</td>
 									<td class="total">
 										<p>30000 руб.</p>
@@ -119,72 +119,77 @@
 					<h1 class="mainCatalogueTitle">Сливочное мороженое</h1>
 					<!--Начало формы-->
 					<form class="sortForm" action="#" method="get">
-						<!--Начало сетки для формы-->
-	<!--------------------------------Начало "таблицы" СОРТИРОВКА-ЦЕНА-ЖИРНОСТЬ-->
-						<div class="table1">					
-							<div class="tableRow sortingConditions labelRow">
-								<label class="tbCell1" for="howSort">Сортировка:</label>
-								<label class="tbCell2" for="priceRange">Цена: 100 руб.-500 руб.</label>
-								<label class="tbCell3" for="fatRange">Жирность:</label>						
+						<div class="upperRow">
+							<div class="control">
+								<div class="label">Сортировка:</div>
+								<div class="controlWrapper ctrlSelect">
+									по популярности
+									<ul class="selectMenu">
+										<li>по популярности</li>
+										<li>сначала недорогие</li>
+										<li>сначала дорогие</li>
+										<li>по жирности</li>
+									</ul>
+								</div>
+
 							</div>
-							<div class="tableRow sortingConditions valueRow">
-								<div class="tbCell1">
-									<div class="controlWrapper">
-										<select class="outlineField tbSelect" name="howSort" id="howSort">
-											<option value="1">По популярности</option>
-											<option value="2">Сначала недорогие</option>
-											<option value="3">Сначала дорогие</option>
-											<option value="4">По жирности</option>
-										</select>
+							<div class="control">
+								<div class="label">Цена: 100 руб.-500 руб.</div>
+								<div class="controlWrapper ctrlRange">
+									<div class="mainBar">
+										<div class="bar"></div>
 									</div>
+									<div class="toggleControl toggleMin"></div>
+									<div class="toggleControl toggleMax"></div>
 								</div>
-								<div class="tbCell2 outlineField">
-									<div class="controlWrapper ">
-										<input class="formArea tbRange" type="range" id="priceRange" name="priceRange" min="100" max="500">
-									</div>
-								</div>
-								<div class="tbCell3 outlineField fatSelector">
-									<div class="controlWrapper">
-										<input type="radio" name="fat" value="0" id="zeroFat" checked>
-										<label for="zeroFat">0%</label>
-										<input type="radio" name="fat" value="1" id="lessTenFat" disabled>
-										<label for="lessTenFat">До 10%</label>
-										<input type="radio" name="fat" value="2" id="lessThirtyFat">
-										<label for="lessThirtyFat">До 30%</label>
-										<input type="radio" name="fat" value="3" id="moreThirtyFat">
-										<label for="moreThirtyFat">Выше 30%</label>
-									</div>
-								</div>
+							</div>
+							<div class="control">
+								<div class="label">Жирность:</div>
+								<div class="controlWrapper fatSelector">
+									<input type="radio" name="fat" value="0" id="zeroFat">
+									<label class="label" for="zeroFat">0%</label>
+									<input type="radio" name="fat" value="1" id="lessTenFat" checked disabled>
+									<label class="label" for="lessTenFat">до 10%</label>
+									<input type="radio" name="fat" value="2" id="lessThirtyFat">
+									<label class="label" for="lessThirtyFat">до 30%</label>
+									<input type="radio" name="fat" value="3" id="moreThirtyFat">
+									<label class="label" for="moreThirtyFat">выше 30%</label>	
+								</div>							
 							</div>
 						</div>
-						<div class="table2">
-							<div class="tableRow labelRow sortingConditions">
-								<label class="tbCell1" for="fillingOption">Наполнители:</label>					
-							</div>
-							<div class="sortingConditions tableRow valueRow">
-								<div id="fillingOption" class="tbCell4 fillingOption">
-									<div class="controlWrapper">
+						<div class="lowerRow">
+							<div class="control">
+								<div class="label">Наполнители:</div>
+								<div class="controlWrapper">
+									<div class="chbItem">
 										<input type="checkbox" name="chocolate" value="0" id="chocolate">
 										<label for="chocolate">шоколадные</label>
+									</div>
+									<div class="chbItem">									
 										<input type="checkbox" name="sugar" value="1" id="sugar">
 										<label for="sugar">сахарные присыпки</label>
+									</div>
+									<div class="chbItem">										
 										<input type="checkbox" name="fruit" value="2" id="fruit">
 										<label for="fruit">фрукты</label>
+									</div>									
+									<div class="chbItem">										
 										<input type="checkbox" name="syrop" value="3" id="syrop" checked disabled>
 										<label for="syrop">сиропы</label>
+									</div>									
+									<div class="chbItem">										
 										<input type="checkbox" name="jam" value="4" id="jam">
 										<label for="jam">джемы</label>
-
-									</div>
-								</div>
-								<div class="tbCell5">
-									<input class="btnSubmit" type="submit" value="Применить">
-								</div>
+									</div>									
+								</div>								
+							</div>
+							<div class="control">
+								<input class="btnSubmit" type="submit" value="Применить">
 							</div>
 						</div>
 					</form>
 					<!--Конец формы-->
-					<!----------Начало каталога----->
+					<!--Начало каталога-->
 					<div class="catalogueList">
 						<!--Начало Ряд 1-->
 						<article class="item">
@@ -349,14 +354,8 @@
 						</div>
 						<p>Сделано в HTML Academy © 2017</p>
 					</div>
-				</footer>
-			
-			
-<!------------------------------------------------------------------->			
-			
-			
-			
+				</footer>	
+			</div>				
 		</div>
-
 	</body>
 </html>

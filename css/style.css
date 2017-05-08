@@ -24,7 +24,6 @@ button {
 	transition:  background-color 0.5s ease;
 }
 .mainWrapper {
-	outline: 20px solid yellow;
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
@@ -86,7 +85,6 @@ button {
 	margin-top: 16px;
 	margin-bottom: 12px;
 	vertical-align: middle;
-	outline: 1px solid white;
 	position: relative;
 }
 .mainNavigation .subMenu {
@@ -479,7 +477,6 @@ button {
 	position: relative;
 }
 .slider figure{
-	outline: 1px solid yellow;
 	width: 650px;
 	margin: 0 auto;
 	background-repeat: no-repeat;
@@ -490,7 +487,6 @@ button {
 	display: block;
 	width: 1045px;
 	height: 881px;
-	/*outline: 1px solid white;*/
 	position: absolute;
 	top: -80px;
 	left: 77px;
@@ -607,7 +603,6 @@ body>input[type="radio"] {
 	width: 519px;
 	padding-left: 20px;
 	padding-right: 21px;
-	outline: 1px solid green;
 }
 .promoEvents .promoEventsTitle {
 	font-size: 35px;
@@ -629,16 +624,23 @@ body>input[type="radio"] {
 
 .promoEvents .leftCol {
 	float: left;	
-	background-image: url("../img/raspberry-560_230.jpg")
+	background-image: url("../img/raspberry-560_230.jpg");
+	background-repeat: repeat-y;
+	background-color: #ff0000;
+	min-height: 228px;
 }
 .promoEvents .rightCol {
 	float: right;
-	background-image: url("../img/chocko-560_230.jpg")
+	background-image: url("../img/chocko-560_230.jpg");
+	background-repeat: repeat-y;
+	background-color: #ff0000;
+	min-height: 228px;
 }
 .promoEvents .btn {
 	float: right;
 	text-align: center;	
-	background-color: red;	
+	background-color: red;
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	margin-bottom: 23px;
 	border-radius: 20px;	
 	color: #ffffff;
@@ -666,13 +668,11 @@ body>input[type="radio"] {
 .hits {
 	margin-top: 0;
 	padding: 0;
-	outline: 1px solid black;
 	font-size: 0;
 }
 
 /*Хиты начало*/
 .hits .item {
-	outline: 1px solid yellow;
 	display: inline-block;
 	width: 267px;
 	margin-right: 26px;
@@ -775,14 +775,14 @@ body>input[type="radio"] {
 /*Хиты конец*/
 /*Плюсы начало*/
 .pros{
-	outline: 1px solid white;
 	padding-top: 1px;
 	font-size: 0;
-	height: 304px;
+	min-height: 304px;
 	margin-bottom: 40px;
 	border-radius: 13px;
 	background-image: url("../img/waffle-734_433.png");
 	background-repeat: repeat-x;
+	background-color: #e7d4ab;
 }
 .pros .prosTitle {
 	padding: 0;
@@ -799,7 +799,6 @@ body>input[type="radio"] {
 .pros .prosItem {
 	margin: 0;
 	padding: 0;
-	outline: 1px solid blue;
 	width: 484px;
 	padding-left: 77px;
 	display: inline-block;
@@ -841,11 +840,7 @@ body>input[type="radio"] {
 }
 /*Плюсы конец*/
 /*Прочая информация начало*/
-.infoPart,
-.infoPart .blog, 
-.infoPart .subscribe{
-	outline: 1px solid white;
-}
+
 .infoPart {
 	margin-bottom: 36px;
 }
@@ -853,11 +848,12 @@ body>input[type="radio"] {
 	width: 540px;
 	padding-left: 20px;
 	float: left;
-	height: 220px;
+	min-height: 220px;
 	border-top: 1px solid transparent;
 	background-image: url("../img/strawberry-560_220.jpg");
 	background-repeat: no-repeat;
 	border-radius: 13px;
+	background-color: #ffffff;
 }
 .infoPart .blog .blogTitle{
 	margin: 0;
@@ -880,29 +876,32 @@ body>input[type="radio"] {
 	line-height: 1.25;
 	font-weight: 700;
 	color: #000000;
-	outline: 1px solid white;
+}
+.infoPart .specialBorder {
+	float: right;
+	padding: 7px;
+	background-color: #ffffff;
+	background-image: url("../img/backLolly-40_38.png");
+	border-radius: 15px;
 }
 .infoPart .subscribe {
-	width: 520px;
-	border: 5px solid white;
+	width: 516px;
+	border-radius: 15px;
 	padding-left: 10px;
 	padding-right: 20px;
-	float: right;
-	height: 210px;
+	min-height: 206px;
 	background-color: rgb(248, 247, 244);
-	/*padding-top: 37px;
-	padding-left: 28px;
-	padding-right: 27px;*/
 }
 .infoPart .subsText {
-	padding-top: 12px;
-	padding-left: 11px;
+	margin-top: 0;
+	padding-top: 26px;
+	padding-left: 8px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.375;
 	color: #000000;
-	padding-right: 10px;
-	margin-bottom: 38px;
+	padding-right: 7px;
+	margin-bottom: 35px;
 }
 .subscribeForm input[name="email"] {
 	font-size: 16px;
@@ -914,12 +913,12 @@ body>input[type="radio"] {
 	width: 368px;
 	box-sizing: border-box;
 	border: none;
-	margin-left: 11px;
+	margin-left: 9px;
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(178, 178, 178);
-	margin-right: 10px;
+	margin-right: 9px;
 }
 .subscribeForm .btn {
 	border: none;
@@ -959,8 +958,7 @@ body>input[type="radio"] {
 	padding: 0;
 }
 .findUs .address {
-	outline: 1px solid green;
-	height: 305px;
+	min-height: 305px;
 	width: 305px;
 	border-radius: 15px;
 	border-top: 1px solid transparent;
@@ -1154,13 +1152,11 @@ body>input[type="radio"] {
 /*Карта конец*/
 /*Футер начало*/
 .mainFooter {
-	outline: 1px solid white;
 	font-size: 0;
 	height: 102px;
 	border: 1px solid transparent;
 }
 .mainFooter .social {
-	outline: 1px solid blue;
 	width: 267px;
 	margin-top: 30px;
 }
@@ -1168,7 +1164,6 @@ body>input[type="radio"] {
 	width: 32px;
 	height: 32px;
 	display: inline-block;
-	outline: 1px solid yellow;
 	margin-right: 10px;
 }
 .socialBtn:active {
@@ -1211,12 +1206,10 @@ body>input[type="radio"] {
 	background-image: url("../img/vk100-32_32.png");
 }
 .mainFooter .bottomNavigation {
-	outline: 1px solid blue;
 	width: 400px;
 	margin-top: 30px;
 }
 .mainFooter .maker {
-	outline: 1px solid blue;
 	width: 267px;
 }
 .mainFooterSection {
@@ -1237,12 +1230,14 @@ body>input[type="radio"] {
 	display: inline-block;
 	font-size: 13px;
 	position: relative;
+	margin-bottom: 2px;	
 }
 
 .bottomNavMain a {
 	color: #ffffff;
 	font-weight: 400;
-	line-height: 1.384;	
+	line-height: 1.384;
+
 }
 .bottomNavMain a:hover {
 	color: #ebbaa9;
@@ -1301,7 +1296,6 @@ body>input[type="radio"] {
 	margin: 0;
 	margin-top: 22px;
 	margin-bottom: 3px;
-	outline: 1px solid white;
 	font-size: 14px;
 	line-height: 1.142;
 	font-weight: 400;
@@ -1331,232 +1325,240 @@ body>input[type="radio"] {
 }
 /*************************************************************************************/
 /*Форма*/
-.sortForm label {
+.sortForm {
+	font-size: 0;
+	margin-bottom: 40px;
+}
+.sortForm .control {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 16px;
+}
+.sortForm .control>.label {
 	font-size: 14px;
 	line-height: 1.142;
 	font-weight: 500;
+	padding-top: 4px;
+	padding-left: 17px;
+	margin-bottom: 9px;
 }
-.table1 {
-	display: table;
-	border-spacing: 0 5px;
-	margin-bottom: 2px;
-}
-.table1 .tableRow {
-	display: table-row;
-}
-.table1 [class^="tbCell"] {
-	display: table-cell;
-	vertical-align: middle;
-}
-.tbSelect {
-	background-color: transparent;
-	border: none;
-}
-.tbSelect:focus {
-	background-color: transparent;
-	border: none;
-}
-.table1 .valueRow .controlWrapper {
-	border-radius: 19px;
-	background-color: #aabcb2;
-	text-align: center;
-	margin-right: 10px;
-	font-size: 16px;
-	line-height: 1.125;
-	color: #ffffff;
-	font-weight: 500;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.table1 .labelRow label{
-	padding-left: 18px;
-}
-.tbSelect {
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-	color: inherit;
-	font-weight: inherit;
-}
-.tbSelect:focus {
-	color: #000000;
-}
-.tbRange {
-	margin: 0;
-	width: 190px;
-	height: 16px;
-}
-
-.fatSelector label {
-	font-size: inherit;
-	line-height: inherit;
-	color: inherit;
-	font-weight: inherit;	
-}
-.fatSelector .controlWrapper {
+.sortForm .controlWrapper {
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #a8b9af;
+	border-radius: 15px;
+	font-size: 16px;
+	line-height: 1.125;
+	font-weight: 500;
+	color: #ffffff;
 }
-.fatSelector input[type="radio"] {
+.sortForm .ctrlSelect {
+	font-family: inherit;
+	cursor: pointer;
+	min-width: 162px;
+	position: relative;
+	padding-bottom: 11px;
+}
+.sortForm .ctrlSelect::after{
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-top-color: #ffffff;
+	border-bottom: 0;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+
+}
+.sortForm .selectMenu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #a8b9af;
+	display: none;
+	position: absolute;
+	z-index: 555;
+	bottom: -96px;
+	left: 0;
+	min-width: 192px;
+}
+.sortForm .ctrlSelect:hover>.selectMenu {
+	display: block;
+	color: #ffffff;
+}
+.sortForm .ctrlSelect:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+.sortForm .ctrlSelect:hover::after {
+	border-top-color: #000000;
+}
+.sortForm .selectMenu li {
+	padding-left: 15px;
+	padding-right: 15px;	
+}
+.sortForm .selectMenu li:hover{
+	background-color: red;
+}
+.sortForm .ctrlRange {
+	position: relative;
+}
+.sortForm .ctrlRange .mainBar {
+	width: 188px;
+	height: 5px;
+	background-color: rgba(255,255,255,0.5);
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.sortForm .ctrlRange .bar {
+	width: 80%;
+	height: 5px;
+	background-color: #ffffff;
+}
+.sortForm .toggleControl {
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	top: 8px;	
+}
+.sortForm .toggleMin {
+	left: 10px;	
+}
+.sortForm .toggleMax {
+	left: 70%;	
+}
+.sortForm .fatSelector {
+	font-size: 0;
+}
+.sortForm input[type="radio"] {
 	display: none;
 }
-.fatSelector input[type="radio"]+label {
-	margin-right: 20px;
-	vertical-align: top;
-}
-.fatSelector input[type="radio"]+label::before {
+.sortForm input[type="radio"]+label::before {
 	content: "";
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	background-color: #aabcb2;	
-	border-width: 4px;
-	border-style: solid;
-	border-color: #aabcb2;
 	border-radius: 50%;
-	box-shadow: 0 0 0 2px #ffffff;
+	background-color: #a8b9af;
+	border: 5px solid #a8b9af;
+	box-shadow: 0 0 0 1px #ffffff;
 	margin-right: 10px;
+	vertical-align: top;	
 }
-.fatSelector input[type="radio"]:checked+label::before {
-	background-color: #ffffff;
-}
-.fatSelector input[type="radio"]+label:hover::before {
-	box-shadow: 0 0 0 3px #ffffff;	
-}
-.fatSelector input[type="radio"]:disabled+label::before {
-	background-color: #aabcb2;
-	box-shadow: 0 0 0 2px #8eaa9e;	
-}
-.fatSelector input[type="radio"]:checked:disabled+label::before {
-	background-color: #8eaa9e;
-	box-shadow: 0 0 0 2px #8eaa9e;	
-}
-.table2 {
-	display: table;
-	border-spacing: 0 5px;
-	margin-bottom: 35px;
-}
-.table2 .tableRow {
-	display: table-row;
-}
-.table2 [class^="tbCell"] {
-	display: table-cell;
-	vertical-align: middle;
-}
-.table2 .labelRow label{
-	padding-left: 18px;
-}
-.table2 .optionLine {
-	display: inline-block;
-}
-.table2 .valueRow .controlWrapper {
-	border-radius: 17px;
-	background-color: #aabcb2;
-	text-align: center;
-	margin-right: 10px;
+.sortForm input[type="radio"]+label {
 	font-size: 16px;
 	line-height: 1.125;
-	color: #ffffff;
 	font-weight: 500;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	cursor: pointer;
+	vertical-align: top;	
 }
-.table2 .fillingOption .controlWrapper {
+.sortForm input[type="radio"]:not(:last-of-type)+label {
+	margin-right: 20px;	
+}
+
+.sortForm input[type="radio"]:not(:disabled)+label:hover::before {
+	box-shadow: 0 0 0 3px #ffffff;
+}
+.sortForm input[type="radio"]:checked+label::before {
+	background-color: #ffffff;
+}
+.sortForm input[type="radio"]:disabled+label {
+	opacity: 0.4;	
+}
+
+.sortForm .upperRow {
+	margin-bottom: 7px;
+}
+.sortForm .lowerRow .controlWrapper {
 	font-size: 0;
 }
-.table2 .fillingOption input[type="checkbox"] {
+.sortForm .lowerRow .control {
+	vertical-align: bottom;
+}
+.sortForm .lowerRow label {
+	font-size: 16px;
+	line-height: 1.125;
+	font-weight: 500;
+}
+.sortForm .lowerRow input[type="checkbox"] {
 	display: none;
 }
-.table2 .fillingOption input[type="checkbox"]+label:not(:last-child) {
-	padding-right: 15px;
-}
-.table2 .fillingOption  input[type="checkbox"]+label {
-	vertical-align: top;
+.sortForm .chbItem {
 	position: relative;
-	padding-left: 30px; 
+	display: inline-block;
 }
-.table2 .fillingOption  input[type="checkbox"]+label:before {
+.sortForm .lowerRow .chbItem:not(:last-of-type) input[type="checkbox"]+label {
+	margin-right: 22px;
+}
+.sortForm .lowerRow input[type="checkbox"]+label::before {
 	content: "";
 	display: inline-block;
-	width: 19px;
-	height: 19px;
-	border-radius: 6px;
-	border: 2px solid #ffffff;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
 	margin-right: 12px;
-	vertical-align: bottom;
-	position: absolute;
-	left: -1px;
-	top: 0;
+	vertical-align: top;
 }
-.table2 .fillingOption  input[type="checkbox"]+label::after {
+.sortForm .lowerRow input[type="checkbox"]:checked+label::after {
 	content: "";
 	display: inline-block;
 	width: 9px;
 	height: 6px;
-	border-bottom: 2px solid #ffffff;
 	border-left: 2px solid #ffffff;
-	position: absolute;
-	left: 6px;
-	top: 5px;
+	border-bottom: 2px solid #ffffff;
 	transform: rotate(-45deg);
-	display: none;
+	position: absolute;
+	top: 4px;
+	left: 5px;
 }
-.table2 .fillingOption  input[type="checkbox"]:checked+label::after {
-	display: inline;
+.sortForm .lowerRow input[type="checkbox"]+label:hover {
+	cursor: pointer;
 }
-.table2 .fillingOption  input[type="checkbox"]:not(:disabled)+label:hover::before {
-	box-shadow: 0 0 0 1px #ffffff;
+.sortForm .lowerRow input[type="checkbox"]:not(:disabled)+label:hover::before {
+	box-shadow: 0 0 0 2px #ffffff;
 }
-.table2 .fillingOption  input[type="checkbox"]:disabled:checked+label::after {
-	border-color: #8eaa9e;
+.sortForm .lowerRow input[type="checkbox"]:disabled+label {
+	opacity: 0.5;
 }
-.table2 .fillingOption  input[type="checkbox"]:disabled+label::before {
-	border-color: #8eaa9e;
+.sortForm .lowerRow input[type="checkbox"]:disabled+label::after {
+	opacity: 0.5;
 }
-
-
-.table2 .valueRow .controlWrapper {
-	margin-right: 10px;
-	font-size: 16px;
-	line-height: 1.125;
-	color: #ffffff;
-	font-weight: 500;
-}
-.controlWrapper label {
-	font-size: inherit;
-	line-height: inherit;
-	color: inherit;
-	font-weight: inherit;	
-}
-.table2 .btnSubmit {
+.sortForm .lowerRow .btnSubmit {
+	padding: 0;
+	margin: 0;
 	border: none;
-	font-size: 16px;
-	line-height: 1.125;
-	font-weight: 500;
-	font-family: inherit;
-	color: white;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 27px;
+	padding-right: 27px;
 	padding-top: 7px;
 	padding-bottom: 7px;
-	border-radius: 17px;
 	border: 2px solid #ffffff;
-	background-color: #b5c4bc;	
+	background-color: rgba(255,255,255, 0.2);
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 1.125;
+	font-weight: 500;
+	color: #ffffff; 
+	cursor: pointer;
+	border-radius: 15px;
 }
-.table2 .btnSubmit:hover {
-	background-color: #ffffff;
+.sortForm .lowerRow .btnSubmit:hover {
+	background-color: rgba(255,255,255, 1);
 	color: #000000;
-	cursor: pointer;	
 }
-.table2 .btnSubmit:active {
-	background-color: #ebebeb;
-	cursor: pointer;	
-	box-shadow: 0px 1px 0px 0 #000000 inset; 
+.sortForm .lowerRow .btnSubmit:active {
+	box-shadow: 0 2px 0 0 #000000 inset;
+	background-color: rgba(255,255,255, 0.7);
 }
 /*****************************************************************/
 /*****каталог начало****************/
@@ -1568,7 +1570,6 @@ body>input[type="radio"] {
 	margin-right: 0;
 }
 .catalogueList .item {
-	outline: 1px solid yellow;
 	display: inline-block;
 	width: 267px;
 	margin-right: 26px;
@@ -1661,7 +1662,6 @@ body>input[type="radio"] {
 /****пагинатор***/
 .pageNavigation {
 	float: right;
-	outline: 1px solid white;
 	font-size: 0;
 	margin-bottom: 30px;
 
@@ -1718,10 +1718,6 @@ body>input[type="radio"] {
 	background-position: center;	
 }
 
-
-* {
-	outline: none !important;
-}
 
 
 
