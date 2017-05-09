@@ -92,7 +92,7 @@ button {
 	margin: 0;
 	list-style: none;
 	position: absolute;
-	top: 40px;
+	top: 35px;
 	left: -8px;
 	z-index: 100;
 	color: #000000;
@@ -101,9 +101,8 @@ button {
 	border-radius: 5px;
 	background-color: rgb(248, 247, 244);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-	width: 125px;
+	width: 143px;
 	height: 173px;
-	border-top:	5px solid transparent;
 	display: none;
 }
 .mainNavigation .upperMenu>li:hover .subMenu {
@@ -120,7 +119,7 @@ button {
 	margin-left: 6px;
 	margin-right: 12px;
 	border: 1px solid #000000;
-	margin-top: 13px;
+	margin-bottom: 5px;
 	opacity: 0.2;
 }
 .mainNavigation .subMenu>li a{
@@ -129,9 +128,9 @@ button {
 	text-decoration: none;
 	color: #000000;
 	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-left: 6px;
-	padding-right: 12px;
+	padding-bottom: 9px;
+	padding-left: 20px;
+	padding-right: 10px;
 }
 .mainNavigation .subMenu>li a:hover {
 	background-color: rgb(251, 222, 216);
@@ -142,6 +141,7 @@ button {
 .mainNavigation .subMenu>li>a.activePage {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);	
 	color: #ffffff;
+	cursor: default;
 }
 
 .mainNavigation li.menuNovelties a {
@@ -152,7 +152,7 @@ button {
 	margin-top: 13px;
 	margin-bottom: 18px;
 	position: relative;
-	width: 265px;
+	min-width: 265px;
 	float: right;
 	font-size: 0;
 }
@@ -168,8 +168,8 @@ button {
 	border-radius: 16px;
 	padding-top: 4px;
 	padding-bottom: 4px;
-	padding-left: 19px;
-	padding-right: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
 	text-decoration: none;
 	vertical-align: top;
 }
@@ -237,6 +237,7 @@ button {
 }
 .callLogin:hover {
 	color: #000000;
+	cursor: pointer;
 }
 .clientArea .btnInline:last-child {
 	margin-right: 0;	
@@ -247,7 +248,7 @@ button {
 	height: 215px;
 	background: white;
 	position: absolute;
-	top: 35px;
+	top: 40px;
 	right: 125px;
 	z-index: 4;
 	border-radius: 6px;
@@ -255,6 +256,9 @@ button {
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	display: none;
 
+}
+.clientArea .callLogin:hover+.loginForm {
+	display: block;
 }
 .loginForm .formLine {
 	position: relative;
@@ -340,6 +344,9 @@ button {
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.64) inset;
 	background-image: linear-gradient( 90deg, rgb(251,80,52) 0%, rgb(254,85,54) 100%);	
 }
+.clientArea .tray {
+	margin-right: 0;
+}
 .tray::before {
 	content: "";
 	display: inline-block;
@@ -354,6 +361,15 @@ button {
 	background-repeat: no-repeat;
 	background-position: center;	
 }
+.tray.notEmpty::before {
+	background-image: url("../img/picTrayRed-21_20.png");
+	background-repeat: no-repeat;
+	background-position: center;		
+}
+.tray.notEmpty {
+	color: #000000;
+	background-color: #ffffff;
+}
 .trayTable {
 	width: 510px;
 	background-color: #f8f7f4;
@@ -361,12 +377,14 @@ button {
 	padding-right: 15px;
 	position: absolute;
 	top: 40px;
-	right: 15px;
+	right: 0px;
 	z-index: 5;
 	border-radius: 5px;
 	display: none;
 }
-
+.tray.notEmpty:hover+.trayTable {
+	display: block;
+}
 .trayData {
 	width: 510px;
 	margin: 0 auto;
@@ -745,6 +763,7 @@ body>input[type="radio"] {
 	font-weight: 700;
 	position: absolute;
 	bottom: 65px;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	
 }
 .hits .weight {
@@ -1348,7 +1367,7 @@ body>input[type="radio"] {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	background-color: #a8b9af;
-	border-radius: 15px;
+	border-radius: 20px/17px;
 	font-size: 16px;
 	line-height: 1.125;
 	font-weight: 500;
@@ -1550,7 +1569,7 @@ body>input[type="radio"] {
 	font-weight: 500;
 	color: #ffffff; 
 	cursor: pointer;
-	border-radius: 15px;
+	border-radius: 20px/17px;
 }
 .sortForm .lowerRow .btnSubmit:hover {
 	background-color: rgba(255,255,255, 1);
@@ -1597,7 +1616,7 @@ body>input[type="radio"] {
 	text-align: center;
 	top: -10px;
 	left: -10px;
-	z-index: 100;
+	z-index: 1;
 	text-align: center;
 }
 .catalogueList .item:hover .hideBt .btn {
@@ -1634,6 +1653,8 @@ body>input[type="radio"] {
 	font-size: 16px;
 	line-height: 1.375;
 	font-weight: 500;
+	position: relative;
+	z-index: 2;
 
 }
 .catalogueList .price {
@@ -1642,6 +1663,7 @@ body>input[type="radio"] {
 	font-weight: 700;
 	position: absolute;
 	bottom: 105px;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	
 }
 .catalogueList .weight {
@@ -1662,20 +1684,24 @@ body>input[type="radio"] {
 /****пагинатор***/
 .pageNavigation {
 	float: right;
+	margin: 0;
+	padding: 0;
 	font-size: 0;
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 
 }
 .pageNavigation li{
 	display: inline-block;
-	padding-left: 5px;
-	width: 28px;
-	height: 28px;
+	width: 26px;
+	height: 26px;
 	font-size: 16px;
 	line-height: 1.125;
 	font-weight: 500;
 	text-align: center;
 	vertical-align: top;
+}
+.pageNavigation li:not(:last-child){
+	margin-right: 4px;
 }
 .pageNavigation a{
 	font-size: inherit;
@@ -1684,7 +1710,7 @@ body>input[type="radio"] {
 	color: #ffffff;
 	text-decoration: none;
 	border-radius: 50%;
-	line-height: 28px;
+	line-height: 26px;
 }
 .pageNavigation a:hover {
 	background-color: rgba(255,255,255,0.2);
@@ -1701,6 +1727,7 @@ body>input[type="radio"] {
 	background-image: url("../img/arrowWhite.png");
 	background-repeat: no-repeat;
 	background-position: center;
+
 }
 .next {
 	background-image: url("../img/arrowWhiteNext.png");
@@ -1710,14 +1737,19 @@ body>input[type="radio"] {
 .next.disabled {
 	background-image: url("../img/arrowNextOpacity.png");
 	background-repeat: no-repeat;
-	background-position: center;	
+	background-position: center;
+	background-color: none;		
 }
-.prev.disabled {
+.pageNavigation .prev.disabled {
 	background-image: url("../img/arrowOpacity.png");
 	background-repeat: no-repeat;
 	background-position: center;	
 }
-
+.next.disabled:hover,
+.prev.disabled:hover {
+	background-color: transparent;
+	cursor: default;
+}
 
 
 
