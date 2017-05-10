@@ -23,7 +23,7 @@
 					<!--Логотип конец-->				
 					<ul class="upperMenu">
 						<li>
-							<a href="#">Каталог</a>
+							<a href="#"><span class="underline">Каталог</span></a>
 							<ul class="subMenu">
 								<li class="menuNovelties"><a href="#">Новинки</a></li>
 								<li><a href="catalogue.html">Сливочное</a></li>
@@ -32,18 +32,17 @@
 								<li><a href="#">Мелорин</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">О Компании</a></li>
+						<li><a href="#"><span class="underline">Доставка и оплата</span></a></li>
+						<li><a href="#"><span class="underline">О Компании</span></a></li>
 					</ul>
 				</nav>
 				<!--Навигация конец-->
 				<!--Клиентский блок начало-->
 				<div class="clientArea">					
-					<div class="btn magnify btnInline">
-						<form class="searchForm" action="#" method="get">
-							<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
-						</form>				
-					</div>
+					<div class="btn magnify btnInline"></div>
+					<form class="searchForm" action="#" method="get">
+						<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
+					</form>	
 					<button class="btn btnInline callLogin">Вход</button>
 					<form class="loginForm" action="#" method="post">
 						<div class="formLine">
@@ -107,12 +106,12 @@
 				<div class="promoEvents centeringUnit clearfix">
 					<div class="leftCol promoCol">
 						<h2 class="promoEventsTitle">Малинка даром!</h2>
-						<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+						<p class="leftColText">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 						<a class="btn btnSpecialColor" href="#">Хочу варенье!</a>
 					</div>
 					<div class="rightCol promoCol">
 						<h2 class="promoEventsTitle">Шоколадки даром!</h2>
-						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
+						<p class="rightColText">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 						<a class="btn btnSpecialColor" href="#">Хочу шоколадки!</a>				
 					</div>
 				</div>
@@ -216,16 +215,16 @@
 						<h2 class="addressTitle">Адрес главного офиса и офлайн магазина:</h2>
 						<p class="findUsAddress">
 							<span class="locality">
-								ул. Большая Конюшенная<br>
+								ул. Большая Конюшенная
 								19/8, Санкт-Петербург
 							</span>
 						</p>
 						<p class="orderByTel">
-							Для заказов по телефону:<br>
-							<span class="tel">8 812 450-25-25</span><br>
+							Для заказов по телефону:
+							<span class="tel">8 812 450-25-25</span>
 							(с 10 до 20 ежедневно)							
 						</p>
-						<a class="btn btnSpecialColor" href="#">Форма обратной связи</a>
+						<a class="btn btnSpecialColor btCallModalForm" href="#">Форма обратной связи</a>
 					</article>
 					<form class="modalForm clearfix" action="#" method="post">
 						<p class="modalFormTitle">Мы обязательно вам ответим!</p>
@@ -266,12 +265,77 @@
 				</nav>
 				<div class="maker mainFooterSection">
 					<div class="makerLogo">
-						<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academyLogo-108_38.png" width="108" height="38" alt="HTML Academy"></a>
+						<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academylogo-108_38.png" width="108" height="38" alt="HTML Academy"></a>
 					</div>
 					<p>Сделано в HTML Academy © 2017</p>
 				</div>
 			</footer>
 		</div>
 	</div>
+	<script>
+		var btnModalForm=document.querySelector(".btCallModalForm");
+		var underLayer=document.querySelector(".underLayer");
+		var modalForm=document.querySelector(".modalForm");
+		var btnModalClose=document.querySelector(".modalForm .close");
+		var searchForm=document.querySelector(".searchForm");
+		var btnMagnify=document.querySelector(".magnify");
+		var btnCallLogin=document.querySelector(".callLogin");
+		var loginForm=document.querySelector(".loginForm");
+		var searchInput=searchForm.querySelector("[name=search]");
+		var login=loginForm.querySelector("[name=login]");
+		var password=loginForm.querySelector("[name=password]");
+		var loginStorage=localStorage.getItem("login");
+		
+		btnModalForm.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			modalForm.classList.add("modalShow");
+			underLayer.classList.add("modalShow");
+		});
+		
+		btnModalClose.addEventListener("click", function(evt){
+			evt.preventDefault();
+			modalForm.classList.remove("modalShow");
+			underLayer.classList.remove("modalShow");
+		});
+		btnMagnify.addEventListener("click",function(evt){
+			evt.preventDefault();
+			searchForm.classList.toggle("modalShow");
+			searchInput.focus();
+		});	
+		
+		
+		btnCallLogin.addEventListener("click",function(evt){
+			evt.preventDefault();
+			loginForm.classList.toggle("modalShow");
+			login.focus();
+			if (loginStorage){
+				login.value=loginStorage;
+				password.focus();
+			}
+		});			
+		loginForm.addEventListener("submit",function(evt){
+			if (!login.value||!password.value){
+				evt.preventDefault();
+				console.log("mudlo");
+			} else {
+				localStorage.setItem("login", login.value);
+			
+			}
+		});
+		window.addEventListener("keydown",function(evt){
+			if (evt.keyCode ===27) {
+				if (modalForm.classList.contains("modalShow")) {
+				modalForm.classList.remove("modalShow");
+				underLayer.classList.remove("modalShow");
+				}
+				if (searchForm.classList.contains("modalShow")) {
+				searchForm.classList.remove("modalShow");
+				}
+				if (loginForm.classList.contains("modalShow")) {
+				loginForm.classList.remove("modalShow");
+				}
+			}			
+		});
+	</script>
 	</body>
 </html>
