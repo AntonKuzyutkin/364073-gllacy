@@ -35,13 +35,15 @@
 					</nav>
 					<!--Навигация конец-->
 					<!--Клиентский блок начало-->
-					<div class="clientArea">					
-						<div class="btn magnify btnInline">
-							<form class="searchForm" action="#" method="get">
-								<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
-							</form>				
-						</div>
-						<button class="btn btnInline callLogin">Вход</button>
+				<div class="clientArea">
+					<div class="hoverWrapper">
+						<div class="magnify clientAreaButton"></div>
+						<form class="searchForm" action="#" method="get">
+							<input class="formField" type="search" name="search" placeholder="Что ищем?">
+						</form>			
+					</div>
+					<div class="hoverWrapper">
+						<button class="callLogin clientAreaButton">Вход</button>
 						<form class="loginForm" action="#" method="post">
 							<div class="formLine">
 								<input class="formField" type="email" name="login" id="loginEmail" placeholder="Электронная почта">
@@ -56,8 +58,10 @@
 								<a href="#" class="formLink">Забыли пароль?</a>
 								<a href="#" class="formLink">Новая регистрация</a>
 							</div>
-						</form>
-						<a class="btn btnInline tray notEmpty" href="#">2 товара</a>
+						</form>				
+					</div>
+					<div class="hoverWrapper bordered">
+						<a class="tray clientAreaButton notEmpty" href="#">2 товара</a>
 						<div class="trayTable">
 							<table class="trayData">
 								<tr>
@@ -97,8 +101,9 @@
 							</table>
 							<p class="grandTotal">Итого: 7500000 руб.</p>
 							<a class="submitOrder btn" href="#">Оформить заказ</a>	
-						</div>	
+						</div>
 					</div>
+				</div>
 					<!--Клиентский блок конец-->
 					<!--Рабочие часы+телефон начало-->
 					<div class="workingHours">

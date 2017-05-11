@@ -38,7 +38,7 @@ button {
 .mainHeader {
 	position: relative;
 	padding-top: 9px;
-	margin-bottom: 8px;
+	margin-bottom: 2px;
 	z-index: 4;
 }
 .mainNavigation {
@@ -154,6 +154,11 @@ button {
 	padding-top: 11px;
 	font-weight: 700;
 }
+
+
+
+
+/********************************************************/
 .clientArea {
 	margin-top: 14px;
 	margin-bottom: 18px;
@@ -163,22 +168,35 @@ button {
 	float: right;
 	font-size: 0;
 }
-
-.clientArea .btnInline {
-	display: inline-block;	
+.clientArea .hoverWrapper {
 	font-size: 14px;
 	font-weight: 500;
 	color: #ffffff;
+	display: inline-block;
+	vertical-align: middle;
 	line-height: 1.143;
-	margin-right: 10px;
+	padding-bottom: 6px;
+}
+.bordered {
+	display: block;
+}
+.clientArea .clientAreaButton {
+	border: none;
+	background-color: none;
+	color: #ffffff;
 	background-color: rgba(255,255,255, 0.2);
+	text-decoration: none;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.143;	
 	border-radius: 16px;
 	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-left: 16px;
 	padding-right: 16px;
-	text-decoration: none;
-	vertical-align: top;
+	margin-right: 10px;
+	
 }
 .clientArea .magnify {
 	border-radius: 50%;
@@ -188,6 +206,38 @@ button {
 	background-image: url("../img/picmagnify-17_17.png");
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.callLogin::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 24px;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	margin-right: 9px;
+	background-image: url("../img/piclogin-21_19.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.clientArea .tray {
+	margin-right: 0;
+	min-width: 85px;
+	display: block;
+}
+.tray::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 24px;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	line-height: 32px;
+	margin-right: 8px;
+	background-image: url("../img/pictray-21_20.png");
+	background-repeat: no-repeat;
+	background-position: center;	
 }
 .clientArea .searchForm {
 	position: absolute;
@@ -203,9 +253,6 @@ button {
 	box-sizing: border-box;
 	display: none;
 }
-.clientArea .modalShow {
-	display: block;
-}
 .clientArea .searchForm input[name="search"]{
 	width: 310px;
 	padding-top: 10px;
@@ -220,27 +267,13 @@ button {
 	border-radius: 5px;
 	background-color: rgb(255, 255, 255);
 }
+.clientArea .hoverWrapper:hover .searchForm {
+	display: block;
+}
 .clientArea .magnify:hover {
 	background-image: url("../img/picmagnifyblack-17_17.png");
 	background-color: #e3e7e3;
 	cursor: pointer;
-}
-/*.clientArea .magnify:hover .searchForm {
-	display: block;
-}*/
-.callLogin::before {
-	content: "";
-	display: inline-block;
-	width: 20px;
-	height: 24px;
-	padding: 0;
-	margin: 0;
-	vertical-align: middle;
-	line-height: 32px;
-	margin-right: 9px;
-	background-image: url("../img/piclogin-21_19.png");
-	background-repeat: no-repeat;
-	background-position: center;
 }
 .callLogin:hover::before {
 	background-image: url("../img/picloginblack-21_19.png");	
@@ -249,28 +282,21 @@ button {
 	color: #000000;
 	cursor: pointer;
 }
-.clientArea .btnInline:last-child {
-	margin-right: 0;	
-}
 
 .clientArea .loginForm {
 	width: 280px;
 	height: 215px;
 	background: white;
 	position: absolute;
-	top: 40px;
+	top: 35px;
 	right: 125px;
 	z-index: 4;
 	border-radius: 6px;
 	background-color: rgb(248, 247, 244);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	display: none;
-
 }
-/*.clientArea .callLogin:hover+.loginForm {
-	display: block;
-}*/
-.clientArea .modalShow {
+.clientArea .hoverWrapper:hover .loginForm {
 	display: block;
 }
 .loginForm .formLine {
@@ -284,8 +310,6 @@ button {
 	top: 5px;
 	display: none;
 }
-
-
 .loginForm .formField {
 	font-size: 14px;
 	line-height: 1.715;
@@ -311,7 +335,6 @@ button {
 .loginForm .formField:focus+label {
 	display: block;
 }
- 
 .loginForm .formLinks {
 	font-size: 14px;
 	line-height: 1.715;
@@ -357,47 +380,17 @@ button {
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.64) inset;
 	background-image: linear-gradient( 90deg, rgb(251,80,52) 0%, rgb(254,85,54) 100%);	
 }
-.clientArea .tray {
-	margin-right: 0;
-	min-width: 85px;
-}
-.tray::before {
-	content: "";
-	display: inline-block;
-	width: 20px;
-	height: 24px;
-	padding: 0;
-	margin: 0;
-	vertical-align: middle;
-	line-height: 32px;
-	margin-right: 8px;
-	background-image: url("../img/pictray-21_20.png");
-	background-repeat: no-repeat;
-	background-position: center;	
-}
-.tray.notEmpty::before {
-	background-image: url("../img/pictrayred-21_20.png");
-	background-repeat: no-repeat;
-	background-position: center;		
-}
-.tray.notEmpty {
-	color: #000000;
-	background-color: #ffffff;
-}
 .trayTable {
 	width: 510px;
 	background-color: #f8f7f4;
 	padding-left: 15px;
 	padding-right: 15px;
 	position: absolute;
-	top: 40px;
+	top: 35px;
 	right: 0px;
 	z-index: 5;
 	border-radius: 5px;
 	display: none;
-}
-.tray.notEmpty:hover+.trayTable {
-	display: block;
 }
 .trayData {
 	width: 510px;
@@ -481,8 +474,46 @@ button {
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.64) inset;
 	background-image: linear-gradient( 90deg, rgb(251,80,52) 0%, rgb(254,85,54) 100%);	
 }
+.tray.notEmpty::before {
+	background-image: url("../img/pictrayred-21_20.png");
+	background-repeat: no-repeat;
+	background-position: center;		
+}
+.tray.notEmpty {
+	color: #000000;
+	background-color: #ffffff;
+}
+.clientArea .hoverWrapper:hover .tray.notEmpty+.trayTable {
+	display: block;
+}
+/*
+.clientArea .modalShow {
+	display: block;
+}
+.clientArea .modalShow {
+	display: block;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/****************************************************************/
 .workingHours{
 	margin: 0;
 	padding: 0;
@@ -1349,7 +1380,7 @@ body>input[type="radio"] {
 .breadcrumbs {
 	padding: 0;
 	margin: 0;
-	margin-top: 23px;
+	margin-top: 18px;
 	margin-bottom: 6px;
 	font-size: 14px;
 	line-height: 1.142;

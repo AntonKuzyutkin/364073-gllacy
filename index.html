@@ -38,28 +38,74 @@
 				</nav>
 				<!--Навигация конец-->
 				<!--Клиентский блок начало-->
-				<div class="clientArea">					
-					<div class="btn magnify btnInline"></div>
-					<form class="searchForm" action="#" method="get">
-						<input class="formField" type="search" name="search" placeholder="Что ищем?"><!--класс btn описывает все кнопки с радиусом-->
-					</form>	
-					<button class="btn btnInline callLogin">Вход</button>
-					<form class="loginForm" action="#" method="post">
-						<div class="formLine">
-							<input class="formField" type="email" name="login" id="loginEmail" placeholder="Электронная почта">
-							<label for="loginEmail">Электронная почта</label>
+				<div class="clientArea">
+					<div class="hoverWrapper">
+						<div class="magnify clientAreaButton"></div>
+						<form class="searchForm" action="#" method="get">
+							<input class="formField" type="search" name="search" placeholder="Что ищем?">
+						</form>			
+					</div>
+					<div class="hoverWrapper">
+						<button class="callLogin clientAreaButton">Вход</button>
+						<form class="loginForm" action="#" method="post">
+							<div class="formLine">
+								<input class="formField" type="email" name="login" id="loginEmail" placeholder="Электронная почта">
+								<label for="loginEmail">Электронная почта</label>
+							</div>
+							<div class="formLine">
+								<input class="formField" type="password" name="password" id="loginPassword" placeholder="Пароль">
+								<label for="loginPassword">Пароль</label>
+							</div>
+							<input class="btn btnSpecialColor btnSpecialFont" type="submit" name="enterPrivate" value="Войти">
+							<div class="formLinks">
+								<a href="#" class="formLink">Забыли пароль?</a>
+								<a href="#" class="formLink">Новая регистрация</a>
+							</div>
+						</form>				
+					</div>
+					<div class="hoverWrapper bordered">
+						<a class="tray clientAreaButton" href="#">Пусто</a>
+						<div class="trayTable">
+							<table class="trayData">
+								<tr>
+									<td class="cancelButton">
+										<button class="cancel" type="button"></button>
+									</td>
+									<td class="pictureIce">
+										<img src="img/picIceYellow.png" width="33" height="33" alt="Ваш заказ">	
+									</td>
+									<td class="description">
+										<p>Пломбир с апельсиновым джемом</p>
+									</td>
+									<td class="quantity">
+										<p>1,50 кг x <span class="price">200&nbsp;руб.</span></p>
+									</td>
+									<td class="total">
+										<p>300 руб.</p>
+									</td>				
+								</tr>
+								<tr>
+									<td class="cancelButton">
+										<button class="cancel" type="button"></button>
+									</td>
+									<td class="pictureIce">
+										<img src="img/picIcePink.png" width="33" height="33" alt="Ваш заказ">	
+									</td>
+									<td class="description">
+										<p>Клубничный пломбир с присыпкой из белого шоколада</p>
+									</td>
+									<td class="quantity">
+										<p>1,50 кг x <span class="price">20000000000&nbsp;руб.</span></p>
+									</td>
+									<td class="total">
+										<p>30000 руб.</p>
+									</td>				
+								</tr>
+							</table>
+							<p class="grandTotal">Итого: 7500000 руб.</p>
+							<a class="submitOrder btn" href="#">Оформить заказ</a>	
 						</div>
-						<div class="formLine">
-							<input class="formField" type="password" name="password" id="loginPassword" placeholder="Пароль">
-							<label for="loginPassword">Пароль</label>
-						</div>
-						<input class="btn btnSpecialColor btnSpecialFont" type="submit" name="enterPrivate" value="Войти">
-						<div class="formLinks">
-							<a href="#" class="formLink">Забыли пароль?</a>
-							<a href="#" class="formLink">Новая регистрация</a>
-						</div>
-					</form>					
-					<a class="btn btnInline tray" href="#">Пусто</a>
+					</div>
 				</div>
 				<!--Клиентский блок конец-->
 				<!--Рабочие часы+телефон начало-->
