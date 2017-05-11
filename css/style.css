@@ -493,25 +493,6 @@ button {
 .clientArea .modalShow {
 	display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
 /****************************************************************/
 .workingHours{
@@ -520,6 +501,7 @@ button {
 	position: absolute;
 	right: -1px;
 	top: 59px;
+
 }
 .workingHours p {
 	font-size: 14px;
@@ -532,6 +514,7 @@ button {
 	font-size: 22px;
 	line-height: 1.5;
 	font-weight: 700;
+	display: block;
 	
 }
 /*Хедер конец*/
@@ -703,7 +686,7 @@ body>input[type="radio"] {
 	float: right;
 	background-image: url("../img/chocko-560_230.jpg");
 	background-repeat: repeat-y;
-	background-color: #ff0000;
+	background-color: #452a1e;
 	min-height: 228px;
 }
 .promoEvents .btn {
@@ -963,7 +946,7 @@ body>input[type="radio"] {
 	border-bottom: 1px solid transparent;
 	border-radius: 15px;
 	padding-left: 10px;
-	padding-right: 20px;
+	padding-right: 15px;
 	background-color: rgb(248, 247, 244);
 }
 .infoPart .subsText {
@@ -975,7 +958,6 @@ body>input[type="radio"] {
 	font-size: 16px;
 	line-height: 1.375;
 	color: #000000;
-	padding-right: 7px;
 	margin-bottom: 35px;
 }
 .subscribeForm {
@@ -1006,8 +988,8 @@ body>input[type="radio"] {
 	line-height: 1.333;
 	font-weight: 700;
 	color: #ffffff;
-	padding-left: 17px;
-	padding-right: 17px;
+	padding-left: 18px;
+	padding-right: 19px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 21px;
@@ -1313,13 +1295,13 @@ body>input[type="radio"] {
 	display: inline-block;
 	font-size: 13px;
 	position: relative;
-	margin-bottom: 2px;	
+	margin-bottom: 3px;	
 }
 
 .bottomNavMain a {
 	color: #ffffff;
 	font-weight: 400;
-	line-height: 1.384;
+	line-height: 1.384;/*1.384*/
 
 }
 .bottomNavMain a:hover {
@@ -1370,6 +1352,19 @@ body>input[type="radio"] {
 	text-align: right;
 	margin-top: 0;
 
+}
+.mainFooter .makerLink {
+	color: #ffffff;
+	text-decoration: none;
+}
+.mainFooter .maker .underline {
+	border-bottom: 1px solid rgba(255,255,255,0.2)
+}
+.mainFooter .makerLink:hover {
+	color: #ebbaa9;
+}
+.mainFooter .makerLink:active {
+	color: #ffc39c;
 }
 /*Футер Конец*/
 /*************************************************************************/
@@ -1504,9 +1499,11 @@ body>input[type="radio"] {
 }
 
 .sortForm .ctrlRange .bar {
-	width: 80%;
+	width: 115px;
 	height: 5px;
 	background-color: #ffffff;
+	position: relative;
+	left: 20px;
 }
 .sortForm .toggleControl {
 	width: 20px;
@@ -1518,10 +1515,10 @@ body>input[type="radio"] {
 	top: 8px;	
 }
 .sortForm .toggleMin {
-	left: 10px;	
+	left: 35px;	
 }
 .sortForm .toggleMax {
-	left: 70%;	
+	left: 133px;	
 }
 .sortForm .fatSelector {
 	font-size: 0;
@@ -1715,13 +1712,15 @@ body>input[type="radio"] {
 
 .catalogueList .itemTitle {
 	text-align: center;
-	width: 267px;
+	max-width: 267px;
 	margin-bottom: 0;
 	font-size: 16px;
 	line-height: 1.375;
 	font-weight: 500;
 	position: relative;
 	z-index: 2;
+	padding-left: 5px;
+	padding-right: 5px;
 
 }
 .catalogueList .price {
@@ -1759,8 +1758,8 @@ body>input[type="radio"] {
 }
 .pageNavigation li{
 	display: inline-block;
-	width: 26px;
-	height: 26px;
+	/*width: 26px;
+	height: 26px;*/
 	font-size: 16px;
 	line-height: 1.125;
 	font-weight: 500;
@@ -1768,7 +1767,7 @@ body>input[type="radio"] {
 	vertical-align: top;
 }
 .pageNavigation li:not(:last-child){
-	margin-right: 4px;
+
 }
 .pageNavigation a{
 	font-size: inherit;
@@ -1779,27 +1778,37 @@ body>input[type="radio"] {
 	border-radius: 50%;
 	line-height: 26px;
 }
-.pageNavigation a:hover {
+.pageNavigation .pages {
+	width: 26px;
+	height: 26px;
+	margin-right: 3px;
+}
+.pageNavigation .lastPage {
+	margin-right: 0;
+}
+.pageNavigation .pages:hover {
 	background-color: rgba(255,255,255,0.2);
 }
-.pageNavigation li.active a {
+.pageNavigation li.active .pages {
 	background-color: rgb(255,255,255);
 	color: #000000;
 }
 .prev,
 .next {
 	text-indent: -9999px;
+	width: 10px;
 }
 .prev {
 	background-image: url("../img/arrowwhite.png");
 	background-repeat: no-repeat;
 	background-position: center;
-
+	margin-right: 15px;
 }
 .next {
 	background-image: url("../img/arrowwhitenext.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-left: 15px;
 }
 .next.disabled {
 	background-image: url("../img/arrownextopacity.png");
