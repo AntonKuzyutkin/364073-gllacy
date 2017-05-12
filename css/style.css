@@ -543,8 +543,9 @@ button {
 }
 .slider .slTitle {
 	font-size: 60px;
-	line-height: 1.005;
-	width: 670px;
+	line-height: 1.000;
+	width: 671px;
+	max-height: 120px;
 	font-weight: bold;
 	position: absolute;
 	top: 250px;
