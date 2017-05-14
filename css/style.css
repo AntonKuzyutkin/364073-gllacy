@@ -1536,6 +1536,12 @@ body>input[type="radio"] {
 	position: absolute;
 	top: 8px;	
 }
+.sortForm .toggleControl {
+	box-shadow: 0 0 0 1px #ffffff;
+}
+.sortForm .toggleControl:hover {
+	box-shadow: 0 0 10px 10px red;
+}
 .sortForm .toggleMin {
 	left: 35px;	
 }
@@ -1848,7 +1854,9 @@ body>input[type="radio"] {
 	background-color: transparent;
 	cursor: default;
 }
-
+.makerLogo a {
+	cursor: default;
+}
 
 
 
