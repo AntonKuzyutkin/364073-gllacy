@@ -16,15 +16,9 @@ button {
 	font-family: Roboto, Arial, "Helvetica CY", sans-serif;
 	padding: 0;
 }
-
-/*спрятать ховеры*/
-/************************************************************************/
-/***********обертки********/
 .bodyWrapper {
 	transition:  background-color 0.5s ease;
-
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
 .mainWrapper {
 	max-width: 1200px;
