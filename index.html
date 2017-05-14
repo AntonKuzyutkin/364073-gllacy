@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Glacy - магазин мороженого</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/styleminimize.css">
 	</head>
 	<body>
 	<input type="radio" id="btn-1" name="change" checked>
@@ -256,7 +256,9 @@
 				</div>
 				<!--начало карта-контакты-->
 				<div class="findUs">
-				<img src="img/map-1200_430.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург 8 812 450-25-25 (с 10 до 20 ежедневно)">
+				<img class="staticMap" src="img/map-1200_430.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург 8 812 450-25-25 (с 10 до 20 ежедневно)">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894615867413!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494756859790" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<!--<img src="img/map-1200_430.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург 8 812 450-25-25 (с 10 до 20 ежедневно)">-->
 					<article class="address">
 						<h2 class="addressTitle">Адрес главного офиса и офлайн магазина:</h2>
 						<p class="findUsAddress">
@@ -318,70 +320,6 @@
 			</footer>
 		</div>
 	</div>
-	<script>
-		var btnModalForm=document.querySelector(".btCallModalForm");
-		var underLayer=document.querySelector(".underLayer");
-		var modalForm=document.querySelector(".modalForm");
-		var btnModalClose=document.querySelector(".modalForm .close");
-		var searchForm=document.querySelector(".searchForm");
-		var btnMagnify=document.querySelector(".magnify");
-		var btnCallLogin=document.querySelector(".callLogin");
-		var loginForm=document.querySelector(".loginForm");
-		var searchInput=searchForm.querySelector("[name=search]");
-		var login=loginForm.querySelector("[name=login]");
-		var password=loginForm.querySelector("[name=password]");
-		var loginStorage=localStorage.getItem("login");
-		
-		btnModalForm.addEventListener("click", function(evt) {
-			evt.preventDefault();
-			modalForm.classList.add("modalShow");
-			underLayer.classList.add("modalShow");
-		});
-		
-		btnModalClose.addEventListener("click", function(evt){
-			evt.preventDefault();
-			modalForm.classList.remove("modalShow");
-			underLayer.classList.remove("modalShow");
-		});
-		btnMagnify.addEventListener("click",function(evt){
-			evt.preventDefault();
-			searchForm.classList.toggle("modalShow");
-			searchInput.focus();
-		});	
-		
-		
-		btnCallLogin.addEventListener("click",function(evt){
-			evt.preventDefault();
-			loginForm.classList.toggle("modalShow");
-			login.focus();
-			if (loginStorage){
-				login.value=loginStorage;
-				password.focus();
-			}
-		});			
-		loginForm.addEventListener("submit",function(evt){
-			if (!login.value||!password.value){
-				evt.preventDefault();
-				console.log("mudlo");
-			} else {
-				localStorage.setItem("login", login.value);
-			
-			}
-		});
-		window.addEventListener("keydown",function(evt){
-			if (evt.keyCode ===27) {
-				if (modalForm.classList.contains("modalShow")) {
-				modalForm.classList.remove("modalShow");
-				underLayer.classList.remove("modalShow");
-				}
-				if (searchForm.classList.contains("modalShow")) {
-				searchForm.classList.remove("modalShow");
-				}
-				if (loginForm.classList.contains("modalShow")) {
-				loginForm.classList.remove("modalShow");
-				}
-			}			
-		});
-	</script>
+	<script src="js/scriptminimize.js"></script>
 	</body>
 </html>
