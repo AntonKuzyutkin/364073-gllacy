@@ -1539,9 +1539,6 @@ body>input[type="radio"] {
 .sortForm .toggleControl {
 	box-shadow: 0 0 0 1px #ffffff;
 }
-.sortForm .toggleControl:hover {
-	box-shadow: 0 0 10px 10px red;
-}
 .sortForm .toggleMin {
 	left: 35px;	
 }
