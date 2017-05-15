@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Glacy - магазин мороженого</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/styleminimize.css">
 	</head>
 	<body>
 	<input type="radio" id="btn-1" name="change" checked>
@@ -49,11 +49,11 @@
 						<button class="callLogin clientAreaButton">Вход</button>
 						<form class="loginForm" action="#" method="post">
 							<div class="formLine">
-								<input class="formField" type="email" name="login" id="loginEmail" placeholder="Электронная почта">
+								<input class="formField" type="text" name="login" id="loginEmail" placeholder="Электронная почта" required>
 								<label for="loginEmail">Электронная почта</label>
 							</div>
 							<div class="formLine">
-								<input class="formField" type="password" name="password" id="loginPassword" placeholder="Пароль">
+								<input class="formField" type="password" name="password" id="loginPassword" placeholder="Пароль" required>
 								<label for="loginPassword">Пароль</label>
 							</div>
 							<input class="btn btnSpecialColor btnSpecialFont" type="submit" name="enterPrivate" value="Войти">
@@ -247,7 +247,7 @@
 								что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 							</p>
 							<form class="subscribeForm" action="#" method="post">
-								<input type="email" name="email" placeholder="Электронная почта">
+								<input type="text" name="email" placeholder="Электронная почта">
 								<input class="btn btnSpecialColor btnSpecialFont" type="submit" value="Отправить" name="okSubscription">
 							</form>
 						</div>
@@ -278,15 +278,15 @@
 						<p class="modalFormTitle">Мы обязательно вам ответим!</p>
 						<button class="close" type="button"></button>
 						<div class="formLine">
-							<input class="formField" type="text" name="clientName" id="clientName" placeholder="Как вас зовут?">
+							<input class="formField" type="text" name="clientName" id="clientName" placeholder="Как вас зовут?" required>
 							<label for="clientName">Как вас зовут?</label>
 						</div>
 						<div class="formLine">
-							<input class="formField" type="text" name="clientMail" id="clientMail" placeholder="Ваша почта для ответа">
+							<input class="formField" type="text" name="clientMail" id="clientMail" placeholder="Ваша почта для ответа" required>
 							<label for="clientMail">Ваша почта для ответа</label>
 						</div>						
 						<div class="formLine">
-							<textarea class="formField clientComment" name="clientComment" id="clientComment" placeholder="Напишите нам что-нибудь..."></textarea>
+							<textarea class="formField clientComment" name="clientComment" id="clientComment" placeholder="Напишите нам что-нибудь..." required></textarea>
 							<label for="clientComment">Напишите отзыв</label>
 						</div>							
 						<input class="btn btnSpecialColor btnSpecialFont" type="submit" value="Отправить">
