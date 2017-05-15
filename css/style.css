@@ -311,6 +311,7 @@ button {
 	top: 5px;
 	display: none;
 }
+
 .loginForm .formField:valid+label {
 	color: rgba(0,0,0,0.5);
 	display: block;

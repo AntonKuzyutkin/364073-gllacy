@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Glacy - магазин мороженого</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
-		<link rel="stylesheet" href="css/styleminimize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<div class="bodyWrapper">
@@ -46,11 +46,11 @@
 						<button class="callLogin clientAreaButton">Вход</button>
 						<form class="loginForm" action="#" method="post">
 							<div class="formLine">
-								<input class="formField" type="email" name="login" id="loginEmail" placeholder="Электронная почта">
+								<input class="formField" type="text" name="login" id="loginEmail" placeholder="Электронная почта" required>
 								<label for="loginEmail">Электронная почта</label>
 							</div>
 							<div class="formLine">
-								<input class="formField" type="password" name="password" id="loginPassword" placeholder="Пароль">
+								<input class="formField" type="password" name="password" id="loginPassword" placeholder="Пароль" required>
 								<label for="loginPassword">Пароль</label>
 							</div>
 							<input class="btn btnSpecialColor btnSpecialFont" type="submit" name="enterPrivate" value="Войти">
