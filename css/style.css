@@ -264,6 +264,10 @@ button {
 	border-radius: 5px;
 	background-color: rgb(255, 255, 255);
 }
+.clientArea .searchForm input[name="search"]:hover {
+	box-shadow: 0 0 0 1px rgb(211, 211, 210);
+}
+
 .clientArea .hoverWrapper:hover .searchForm {
 	display: block;
 }
@@ -301,9 +305,9 @@ button {
 }
 .loginForm label {
 	font-size: 12px;
-	color: #000000;
+	color: #8fbdec;
 	position: absolute;
-	left: 25px;
+	left: 35px;
 	top: 5px;
 	display: none;
 }
@@ -324,6 +328,9 @@ button {
 	padding-bottom: 12px;
 	padding-left: 15px;
 	width: 240px;
+}
+.loginForm .formField:hover {
+	box-shadow: 0 0 0 1px rgb(211, 211, 210);
 }
 .loginForm .formField:focus {
 	font-weight: 700;
@@ -981,6 +988,10 @@ body>input[type="radio"] {
 	border-color: rgb(178, 178, 178);
 	margin-right: 10px;
 }
+.subscribeForm input[name="email"]:hover {
+	box-shadow: 0 0 0 1px rgb(211, 211, 210);
+}
+
 .subscribeForm .btn {
 	border: none;
 	font-family: Roboto, Arial, "Helvetica CY", sans-serif;
@@ -1141,9 +1152,9 @@ body>input[type="radio"] {
 }
 .modalForm label {
 	font-size: 12px;
-	color: #000000;
+	color: #8fbdec;
 	position: absolute;
-	left: 25px;
+	left: 15px;
 	top: -15px;
 	display: none;
 }
@@ -1165,6 +1176,11 @@ body>input[type="radio"] {
 	width: 265px;
 	margin-bottom: 20px;
 }
+.modalForm .formField:hover {
+	box-shadow: 0 0 0 1px rgb(211, 211, 210);
+}
+
+
 .modalForm .formField:focus {
 	font-weight: 700;
 	border-color: #7abeed;
@@ -1853,9 +1869,20 @@ body>input[type="radio"] {
 }
 .makerLogo a {
 	cursor: default;
+	text-decoration: none;
 }
-
-
+:focus::-webkit-input-placeholder {
+	color: transparent
+}
+:focus::-moz-placeholder {
+	color: transparent
+}
+:focus:-moz-placeholder {
+	color: transparent
+}
+:focus:-ms-input-placeholder {
+	color: transparent
+}
 
 
 

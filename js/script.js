@@ -43,7 +43,6 @@
 		loginForm.addEventListener("submit",function(evt){
 			if (!login.value||!password.value){
 				evt.preventDefault();
-				console.log("mudlo");
 			} else {
 				localStorage.setItem("login", login.value);
 			
