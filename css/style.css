@@ -1116,7 +1116,7 @@ body>input[type="radio"] {
 	background-color: #f8f7f4;
 	padding-left: 25px;
 	padding-right: 25px;
-	padding-top: 20px;
+	padding-top: 18px;
 	position: fixed;
 	top: 20%;
 	left: 50%;
@@ -1191,7 +1191,6 @@ body>input[type="radio"] {
 
 
 .modalForm .formField:focus {
-	font-weight: 700;
 	border-color: #7abeed;
 }
 .modalForm .formField:focus+label {
@@ -1201,7 +1200,7 @@ body>input[type="radio"] {
 .modalForm .clientComment {
 	width: 427px; 
 	height: 153px;
-	margin-bottom: 22px;
+	margin-bottom: 23px;
 }
 .modalForm .btn {
 	font-family: inherit;
@@ -1213,9 +1212,12 @@ body>input[type="radio"] {
 	line-height:1.333;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	padding-right: 22px;
-	padding-left: 22px;
+	padding-right: 23px;
+	padding-left: 24px;
 	margin-bottom: 25px;
+	border-radius: 24px/24px;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	margin-right: -2px;
 }
 .modalForm .close {
 	width: 21px;
@@ -1254,7 +1256,7 @@ body>input[type="radio"] {
 	font-size: 24px;
 	line-height: 1.116;
 	font-weight: 500;
-	margin-bottom: 18px;
+	margin-bottom: 19px;
 }
 
 /*Карта конец*/
@@ -1325,7 +1327,6 @@ body>input[type="radio"] {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 106px;
-	vertical-align: top;
 }
 .mainFooterSection:last-child {
 	margin-right: 0;
